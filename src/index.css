@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Calibri, sans-serif;
+  background-color: #f4f4f4;
+}
+
+#root {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Dark Ocean CSS Linear Gradient Background */
+.gradient {
+  background: 
+    linear-gradient(to right, #373B44, #4286f4), /* Gradient */
+    url("/src/assets/images/nice-snow-bg.png"); /* Background image */
+  background-blend-mode: soft-light; /* Blend the layers */
+}
+
+.glass-bg {
+/* From https://css.glass */
+height: 90vh;
+max-width: 500px;
+background: rgba(255, 255, 255, 0.4);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(7.1px);
+-webkit-backdrop-filter: blur(7.1px);
+border: 1px solid rgba(255, 255, 255, 0.43);
+margin: 2vh auto;
+}
+.main {
+  height: 100vh;
+  padding: 20px;
+  text-align: center;
+  width: 90%;
+  max-width: 700px;
+  min-width: 380px;
+}
+
+.top {
+  height: 60vh;
+}
+
+.title {
+  font-family: 'Calibri', sans-serif; /* Use Calibri as the font */
+  font-style: italic;                /* Apply italic style */
+  font-weight: bold;                 /* Apply bold style */
+  gap: 10px;
+  margin: 20px;
+  text-align: center;
+  color: white;
+  font-size: xx-large;
+}
+
+.logo {
+  width: 60%;
+  max-width: 600px;
+  margin-top: 15px;
+  border-radius: 20px;;
+}
+
+.instructions {
+  text-align: center;
+  font-size: x-small;
+  width: 330px;
+  margin: 0 auto;
+  color: rgb(76, 90, 100);
+  height: 20px;
+}
+
+.elements-container {
+  display: flex;
+  flex-direction: column; /* Stack rows vertically */
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 20px auto 0 auto;
+  min-height: 40vh;
+  width: 60%;
+  max-width: 300px;
+  align-content: center;
+  justify-content: center;
+}
+
+.element-row {
+  display: flex; /* Align icons in a single row */
+  gap: 5px; /* Space between icons */
+  align-items: center; /* Center icons vertically (if needed) */
+}
+
+.bottom {
+  height: 15vh;
+}
+
+.button-container {
+  max-width: 200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+  gap: 10px; /* Optional: Adds space between items */
+}
+
+.divider {
+  border-top: 8px solid #bbb;
+  border-radius: 5px;
+  margin: 30px auto;
+  max-width: 280px;
+}
+
+.element-icon {
+  width: 30px;
+  cursor: pointer;
+  padding: 2px;
+  border: 2px solid rgb(127, 160, 170);
+  border-radius: 12px;
+  transition: border 0.3s, opacity 0.3s; /* Adds opacity transition */
+  opacity: 1; /* Default opacity */
+}
+
+.element-icon:hover {
+  opacity: 0.8; /* Reduced opacity on hover */
+  border: 2px solid rgb(143, 163, 180); /* Optional: Changes border color on hover */
+}
+
+.clear {
+  width: 90%;
+  max-width: 250px;
+  margin-top: 20px;
+  padding: 10px;
+  border: 2px solid rgb(63, 83, 119);
+  border-radius: 10px;
+  color: rgb(216, 247, 247);
+  font-weight: 600;
+  font-size: medium;
+  background: rgb(61, 148, 160);
+  
+}
+
+button.clear:disabled {
+  color: rgb(189, 186, 186);
+  background: rgb(125, 168, 192);
+  border: 2px solid rgb(110, 160, 157)
+} 
