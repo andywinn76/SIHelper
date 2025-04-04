@@ -1,18 +1,15 @@
 import { useEffect, useState } from "react";
-import ElementButton from "./ElementButton";
-import { PiMinusCircleDuotone } from "react-icons/pi";
+import { useElements } from "../contexts/ElementContext";
 
-function ElementSelector({ setSelectedIcons, selectedIcons, isTouchDevice }) {
-  const ELEMENTS = [
-    "sun",
-    "moon",
-    "fire",
-    "air",
-    "water",
-    "earth",
-    "plant",
-    "animal",
-  ];
+function ElementSelector({ isTouchDevice }) {
+  const [selectedIcons, setSelectedIcons] = useState({});
+  const {
+    allElements,
+    currentElements,
+    addElement,
+    resetElements,
+    setCurrentElements,
+  } = useElements();
 
   // Handle clicking on an element to add it
   const handleAddIcon = (element) => {
@@ -37,6 +34,7 @@ function ElementSelector({ setSelectedIcons, selectedIcons, isTouchDevice }) {
 
   function handleClearElements() {
     setSelectedIcons({});
+    resetElements();
   }
 
   // Long press detection state
@@ -60,24 +58,23 @@ function ElementSelector({ setSelectedIcons, selectedIcons, isTouchDevice }) {
     };
   }, []);
 
+  useEffect(() => {
+    // Push selectedIcons to context as currentElements
+    setCurrentElements((prev) => ({
+      ...prev,
+      ...selectedIcons,
+    }));
+  }, [selectedIcons, setCurrentElements]);
+
   return (
     <section>
       {/* Grid container for elements */}
-      <div className="grid grid-cols-2 gap-2 my-8">
-        {ELEMENTS.map((element) => (
+      <div className="grid grid-cols-4 gap-2 gap-y-3 my-8 mx-4 sm:mx-8">
+        {allElements.map((element) => (
           <div
             key={element}
-            className="flex flex-row items-center justify-center space-x-4"
+            className="flex flex-row items-center justify-center space-x-2 px-1 sm:px-2"
           >
-            {/* + Button */}
-            {/* <ElementButton
-              className="bg-green-500 text-white px-2 py-1 rounded disabled:bg-gray-400 disabled:cursor-not-allowed"
-              onClick={() => handleAddIcon(element)}
-            >
-              +
-            </ElementButton> */}
-
-            {/* Element Icon */}
             <img
               className="w-10 h-10"
               src={`/SIHelper/images/elements/${element}.png`}
@@ -94,7 +91,7 @@ function ElementSelector({ setSelectedIcons, selectedIcons, isTouchDevice }) {
             />
 
             {/* Element Count */}
-            <span className="font-bold text-orange-900 text-3xl text-center min-w-[1ch]">
+            <span className="font-bold text-orange-900 text-3xl sm:text-2xl mr-2 text-center min-w-[1ch] font-reem">
               {selectedIcons[element] ? `${selectedIcons[element]}` : ""}
             </span>
           </div>

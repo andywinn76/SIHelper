@@ -1,9 +1,12 @@
+
+@import './fonts.css';
+
 @import "tailwindcss";
 
 #root {
-  font-family: Calibri, sans-serif;
-  display: flex;
-  place-items: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;  
+  display: block;
+  min-height: 100vh;
 }
 
 .main {
@@ -11,9 +14,10 @@
   max-width: 900px;
   min-width:350px;
   margin: 0 auto;
-  height: 100vh;
   display: flex;
-  place-items: center;
+  flex-direction: column;       /* Arrange vertically */
+  align-items: center;
+  padding: 0.25rem 0;
 }
 
 /* Dark Ocean CSS Linear Gradient Background */
@@ -26,7 +30,7 @@ body {
 
 .glass-bg {
 /* From https://css.glass */
-height: 100%;
+min-height: 100vh;
 width: 90%;
 max-width: 500px;
 display: block;
@@ -37,21 +41,8 @@ box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(7.1px);
 -webkit-backdrop-filter: blur(7.1px);
 border: 1px solid rgba(255, 255, 255, 0.43);
-
-}
-
-.top {
-  height: 70%;
-}
-
-.logo {
-  display: block;
-  text-align: center;
-  margin: 0 auto;
-  width: 40%;
-  max-width: 600px;
-  margin-top: 15px;
-  border-radius: 20px;
+padding-top: 1rem;
+padding-bottom: 1rem;
 }
 
 .instructions {
@@ -90,17 +81,17 @@ border: 1px solid rgba(255, 255, 255, 0.43);
 }
 
 button.clear {
-  width: 90%;
-  max-width: 250px;
-  display: block;
   margin: 5px auto 8px auto;
   padding: 7px;
+  width: 150px;
+  max-width: 250px;
+  display: block;
+  font-size: medium;
+  font-weight: 600;
+  color: rgb(216, 247, 247);
+  background: rgb(61, 148, 160);
   border: 2px solid rgb(63, 83, 119);
   border-radius: 10px;
-  color: rgb(216, 247, 247);
-  font-weight: 600;
-  font-size: medium;
-  background: rgb(61, 148, 160);
 }
 
 button.clear:disabled {
@@ -108,3 +99,116 @@ button.clear:disabled {
   background: rgb(125, 168, 192);
   border: 2px solid rgb(110, 160, 157)
 } 
+
+/* Power tier custom css */
+.locked {
+  opacity: 0.5;
+  filter: grayscale(20%);
+}
+
+.unlocked {
+  opacity: 1;
+}
+
+select {
+  margin: 10px;
+  padding: 5px;
+}
+
+/* Used in renderIcons.js */
+
+img.inline-block {
+  vertical-align: middle;
+}
+
+/* Innate Power table */
+
+.innate-power-table {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.powers-list {
+  margin-top: 20px;
+}
+
+.power-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+.power-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  color: #333;
+  font-family: 'Mouse Memoirs', sans-serif;
+}
+
+.power-meta-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fdf5e6; /* Light parchment/beige */
+  border: 1px solid #aaa;
+  margin-bottom: 0.5rem;
+}
+
+.power-meta-table th {
+  background-color: #e2d3aa;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 1px solid #aaa;
+  padding: 2px 6px;
+}
+
+.power-meta-table td {
+  text-align: center;
+  border: 1px solid #aaa;
+  padding: 4px 6px;
+}
+
+.target-text {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.meta {
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 0.75rem;
+}
+
+.threshold-table img {
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  margin: 1px;
+}
+
+.threshold-row {
+  display: flex;
+  gap: 0px;
+  padding: 5px;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.3);
+}
+
+.threshold-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
+  flex: 0 0 40%;
+  min-width: 140px;
+}
+
+.threshold-effect {
+  padding-left: 0.5rem;
+  font-size: 0.95rem;
+  font-family: 'Lato', sans-serif;
+}
+

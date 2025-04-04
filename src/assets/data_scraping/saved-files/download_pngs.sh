@@ -2,6 +2,7 @@
 
 # Define the URL to scrape
 URL="https://spiritislandwiki.com/index.php?title=Template:Element"
+# URL="https://spiritislandwiki.com/images/"
 
 # Define the output directory for downloaded images
 OUTPUT_DIR="downloaded_pngs"
