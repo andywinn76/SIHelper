@@ -108,16 +108,15 @@ function ElementSelector({ isTouchDevice }) {
       </div>
       {selectedSpirit === "Dances Up Earthquakes" && (
         <div className="text-center text-orange-900 text-xl">
-          <p className="mb-2 font-reem">
-            {/* Power Card{" "} */}
+          <span className="mb-0.5 font-reem">
             <img
-              className="inline h-7 px-1 w-auto mb-1"
+              className="inline h-7 px-1 w-auto mb-0.5"
               src={`${BASE_URL}images/icons/PowerCard.svg`}
               alt="power card icon"
             />{" "}
             Power Card Plays: <span className="font-bold text-orange-900 text-3xl sm:text-2xl ml-2 text-center font-reem">{cardPlays}</span>
-          </p>
-          <div className="flex justify-center gap-4 mb-4">
+          </span>
+          <div className="flex justify-center gap-4 mb-3">
             <button
               onClick={() => setCardPlays(Math.max(cardPlays - 1, 0))}              
               className="text-black text-4xl px-4 disabled:opacity-50 disabled:cursor-not-allowed"
@@ -136,7 +135,7 @@ function ElementSelector({ isTouchDevice }) {
       )}
 
       <button
-        className="clear mt-4"
+        className="clear mb-10"
         onClick={handleClearElements}
         disabled={
           Object.values(selectedIcons).reduce((sum, val) => sum + val, 0) ===
