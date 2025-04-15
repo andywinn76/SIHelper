@@ -40,28 +40,28 @@ npm run dev
 Then, open http://localhost:5173/SIHelper/ in your browser.
 
 ## 🎨 Technologies Used
-React – Component-based UI.
-Tailwind CSS – Modern utility-first styling.
-Vite – Fast build tool for frontend projects.
+- React – Component-based UI.
+- Tailwind CSS – Modern utility-first styling.
+- Vite – Fast build tool for frontend projects.
 
 ## 📢 How to Use
-Open the app in your browser.
-Select the spirit you are playing.
-Open the tabs you want to use, Elements, Energy, Innates. These can be opened/closed at any time.
-Click/Tap an element icon to add it to the tally.
-Click/Tap + or - to add or remove energy.
-Right-click (PC) / Long press (Mobile) to remove an element.
-Press "Clear" to reset all element tallies.
+- Open the app in your browser.
+- Select the spirit you are playing.
+- Open the tabs you want to use, Elements, Energy, Innates. These can be opened/closed at any time.
+- Click/Tap an element icon to add it to the tally.
+- Click/Tap + or - to add or remove energy.
+- Right-click (PC) / Long press (Mobile) to remove an element.
+- Press "Clear" to reset all element tallies.
 
 ## 💡 Future Enhancements
-Add a thumbnail interface to select the spirit you're playing.
-Add a win/loss tracker.
-Add a game glossary tab for referencing keywords.
-Add Spirit aspect special innates and abilities.
-Add collapsible special rules for each spirit.
-Add spirit sorting by complexity/difficulty.
-Track which spirits have been played.
-Add a swipeable interface to allow playing multiple spirits.
+- Add a thumbnail interface to select the spirit you're playing.
+- Add a win/loss tracker.
+- Add a game glossary tab for referencing keywords.
+- Add Spirit aspect special innates and abilities.
+- Add collapsible special rules for each spirit.
+- Add spirit sorting by complexity/difficulty.
+- Track which spirits have been played.
+- Add a swipeable interface to allow playing multiple spirits.
 
 ## 🤝 Contributing
 Feel free to fork the repository and submit a pull request if you'd like to contribute!
@@ -74,6 +74,7 @@ Open a Pull Request
 
 ## 📜 License
 This project is licensed under the **GNU General Public License v3.0 (GPL-3.0)**.  
+
 You are free to use, modify, and distribute this software, but **any modifications or derivative works must also be open-source under the same GPL-3.0 license**.
 
 For full details, see the LICENSE file.
