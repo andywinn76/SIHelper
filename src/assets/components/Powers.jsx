@@ -2,7 +2,6 @@ import { spirits } from "../data/spirits";
 import { useSpirit } from "../contexts/SpiritContext";
 import { useElements } from "../contexts/ElementContext";
 import { renderElementIcons, renderIcons } from "../utils/renderIcons";
-import SpiritSelector from "./SpiritSelector";
 
 function Powers() {
   const { currentElements } = useElements();
@@ -21,7 +20,7 @@ function Powers() {
   }
 
   if (!spiritData) {
-    return <div>No data found for selected spirit.</div>;
+    return <div className="mt-3 font-lato text-center text-2xl">No data found for selected spirit.</div>;
   }
 
   const powers = spiritData.innatePowers;
@@ -29,7 +28,6 @@ function Powers() {
   return (    
     <div className="powers-list">
       <div className="power-card">
-        {/* <SpiritSelector /> */}
         {powers.map((power, powerIndex) => (
           <div key={power.name || powerIndex}>
             <h3 className="power-title uppercase tracking-wider">

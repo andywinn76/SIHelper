@@ -19,7 +19,7 @@ function SpiritSelector() {
   };
 
   return (
-    <div className="mt-2 mb-1 text-center">
+    <div className="mt-2 mb-2 text-center">
       <button
         className="appearance-none text-center font-mouse text-2xl text-amber-700 bg-white/70 border-2 
         border-amber-400 rounded-xl px-6 py-2 shadow-md focus:outline-none focus:ring-2 focus:ring-amber-500 transition-all"
