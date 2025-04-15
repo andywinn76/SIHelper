@@ -1,6 +1,12 @@
 import { spirits } from "../data/spirits";
+import { useSpirit } from "../contexts/SpiritContext";
 
-function SpiritSelector({ selectedSpirit, handleSpiritChange }) {
+function SpiritSelector() {
+  const { selectedSpirit, setSelectedSpirit } = useSpirit();
+  const handleSpiritChange = (event) => {
+    setSelectedSpirit(event.target.value);
+  };
+  
   return (
     <div>
       {/* <label htmlFor="spirit-select">Choose a Spirit:</label> */}

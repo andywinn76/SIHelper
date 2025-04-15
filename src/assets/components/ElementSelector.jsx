@@ -1,8 +1,12 @@
 import { useEffect, useState } from "react";
 import { useElements } from "../contexts/ElementContext";
+import { useSpirit } from "../contexts/SpiritContext";
+
+const BASE_URL = import.meta.env.BASE_URL;
 
 function ElementSelector({ isTouchDevice }) {
   const [selectedIcons, setSelectedIcons] = useState({});
+  const { selectedSpirit } = useSpirit();
   const {
     allElements,
     currentElements,
@@ -10,6 +14,7 @@ function ElementSelector({ isTouchDevice }) {
     resetElements,
     setCurrentElements,
   } = useElements();
+  const [cardPlays, setCardPlays] = useState(0);
 
   // Handle clicking on an element to add it
   const handleAddIcon = (element) => {
@@ -34,7 +39,10 @@ function ElementSelector({ isTouchDevice }) {
 
   function handleClearElements() {
     setSelectedIcons({});
-    resetElements();
+    setCurrentElements((prev) => ({
+      ...Object.fromEntries(Object.keys(prev).map((key) => [key, 0])),
+    }));
+    setCardPlays(0);
   }
 
   // Long press detection state
@@ -63,8 +71,9 @@ function ElementSelector({ isTouchDevice }) {
     setCurrentElements((prev) => ({
       ...prev,
       ...selectedIcons,
+      ...(selectedSpirit === "Dances Up Earthquakes" && { cardPlays }), // inject cardPlays into context if needed
     }));
-  }, [selectedIcons, setCurrentElements]);
+  }, [selectedIcons, cardPlays, selectedSpirit, setCurrentElements]);
 
   return (
     <section>
@@ -97,11 +106,42 @@ function ElementSelector({ isTouchDevice }) {
           </div>
         ))}
       </div>
+      {selectedSpirit === "Dances Up Earthquakes" && (
+        <div className="text-center text-orange-900 text-xl">
+          <p className="mb-2 font-reem">
+            {/* Power Card{" "} */}
+            <img
+              className="inline h-7 px-1 w-auto mb-1"
+              src={`${BASE_URL}images/icons/PowerCard.svg`}
+              alt="power card icon"
+            />{" "}
+            Power Card Plays: <span className="font-bold text-orange-900 text-3xl sm:text-2xl ml-2 text-center font-reem">{cardPlays}</span>
+          </p>
+          <div className="flex justify-center gap-4 mb-4">
+            <button
+              onClick={() => setCardPlays(Math.max(cardPlays - 1, 0))}              
+              className="text-black text-4xl px-4 disabled:opacity-50 disabled:cursor-not-allowed"
+              disabled={cardPlays === 0}
+            >
+              -
+            </button>
+            <button
+              onClick={() => setCardPlays(cardPlays + 1)}
+              className="text-black text-4xl px-4"
+            >
+              +
+            </button>
+          </div>
+        </div>
+      )}
 
       <button
         className="clear mt-4"
         onClick={handleClearElements}
-        disabled={Object.keys(selectedIcons).length === 0}
+        disabled={
+          Object.values(selectedIcons).reduce((sum, val) => sum + val, 0) ===
+            0 && currentElements.cardPlays === 0
+        }
       >
         Clear
       </button>

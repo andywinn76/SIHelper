@@ -3,7 +3,9 @@ import React from "react";
 const BASE_URL = import.meta.env.BASE_URL;
 
 export function renderIcons(text) {
-  const parts = text.split(/(Fast|Slow|City|Town|Dahan|Air|Moon|Fire|Sun|Earth|Plant|Animal|Fear|INVADERS|Explorer|Blight|Presence|Sacred|Range 0|Range 1|Range 2|Range 3|Range 4|Player|None|Beasts|Incarna|Breath of Darkness|Endless Dark|Ember-Eyed Behemoth|Impending|Quake|PowerCard|Land without Blight|Towering Roots of the Jungle|Wandering Voice Keens Delirium|Wilds|Badlands|Disease|Strife|Plus1 Range|Jungle)/g);
+  const parts = text.split(
+    /(Fast|Slow|City|Town|Dahan|Air|Moon|Fire|Sun|Earth|Plant|Animal|Fear|INVADERS|Explorer|Blight|Presence|Sacred|Range 0|Range 1|Range 2|Range 3|Range 4|Player|None|Beasts|Incarna|Breath of Darkness|Endless Dark|Ember-Eyed Behemoth|Impending|Quake|PowerCard|Land without Blight|Towering Roots of the Jungle|Wandering Voice Keens Delirium|Wilds|Badlands|Disease|Strife|Plus1 Range|Jungle)/g
+  );
 
   return parts.map((part, i) => {
     if (part === "Fast") {
@@ -266,7 +268,7 @@ export function renderIcons(text) {
         />
       );
     }
-    
+
     if (part === "Ember-Eyed Behemoth") {
       return (
         <img
@@ -337,15 +339,15 @@ export function renderIcons(text) {
         />
       );
     }
-      if (part === "Badlands") {
-        return (
-          <img
-            key={i}
-            src={`${BASE_URL}/images/icons/badlands.png`}
-            alt="badlands"
-            className="inline-block w-auto h-8 mx-1"
-          />
-        );
+    if (part === "Badlands") {
+      return (
+        <img
+          key={i}
+          src={`${BASE_URL}/images/icons/badlands.png`}
+          alt="badlands"
+          className="inline-block w-auto h-8 mx-1"
+        />
+      );
     }
     if (part === "Disease") {
       return (
@@ -356,17 +358,17 @@ export function renderIcons(text) {
           className="inline-block w-auto h-8 mx-1"
         />
       );
-  }
-  if (part === "Strife") {
-    return (
-      <img
-        key={i}
-        src={`${BASE_URL}/images/icons/strife.png`}
-        alt="Strife"
-        className="inline-block w-auto h-6 mx-1"
-      />
-    );
-}
+    }
+    if (part === "Strife") {
+      return (
+        <img
+          key={i}
+          src={`${BASE_URL}/images/icons/strife.png`}
+          alt="Strife"
+          className="inline-block w-auto h-6 mx-1"
+        />
+      );
+    }
     if (part === "Plus1 Range") {
       return (
         <img
@@ -396,11 +398,14 @@ export function renderElementIcons(elements) {
     [...Array(count)].map((_, i) => (
       <img
         key={`${element}-${i}`}
-        src={`${BASE_URL}images/elements/${element}.png`}
+        src={
+          element === "cardPlays"
+            ? `${BASE_URL}images/icons/PowerCard.svg`
+            : `${BASE_URL}images/elements/${element}.png`
+        }
         alt={element}
         className="inline-block w-6 h-6 mx-0.5"
       />
     ))
   );
 }
-

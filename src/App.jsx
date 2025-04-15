@@ -1,4 +1,6 @@
 import { useState } from "react";
+
+import { SpiritProvider } from "./assets/contexts/SpiritContext";
 import { ElementProvider } from "./assets/contexts/ElementContext";
 import ElementSelector from "./assets/components/ElementSelector";
 import GlassBG from "./assets/components/GlassBG";
@@ -8,9 +10,6 @@ import CollapsibleSection from "./assets/components/CollapsibleSection";
 import Instructions from "./assets/components/Instructions";
 import Powers from "./assets/components/Powers";
 import EnergyTracker from "./assets/components/EnergyTracker";
-import Divider from "./assets/components/Divider";
-import Fonts from "./assets/components/Fonts";
-import { IoMdCloseCircleOutline } from "react-icons/io";
 import { FaRegQuestionCircle } from "react-icons/fa";
 
 function App() {
@@ -21,6 +20,7 @@ function App() {
   const currentElements = "none";
 
   return (
+    <SpiritProvider>
     <ElementProvider>
       <Wrapper>
         {/* {" "} */}
@@ -31,7 +31,7 @@ function App() {
           <Logo />
 
           {/* <Divider /> */}
-          <CollapsibleSection title={<FaRegQuestionCircle />} collapsed={true} title="Instructions" hamburger="true">
+          <CollapsibleSection icon={<FaRegQuestionCircle />} collapsed={true} title="Instructions" hamburger="true">
             <Instructions isTouchDevice={isTouchDevice} />
           </CollapsibleSection>
           <CollapsibleSection title="Elements">
@@ -52,6 +52,7 @@ function App() {
         </GlassBG>
       </Wrapper>
     </ElementProvider>
+    </SpiritProvider>
   );
 }
 

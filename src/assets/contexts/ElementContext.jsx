@@ -24,7 +24,7 @@ export function ElementProvider({ children }) {
       allElements.reduce((acc, elem) => {
         acc[elem] = 0;
         return acc;
-      }, {})
+      }, {cardPlays: 0})
     );
   };
 

@@ -5,12 +5,16 @@ A companion app for the board game **Spirit Island**, helping players keep track
 ---
 
 ## 🌟 Features
-- Track elements **(Sun, Moon, Fire, Air, Water, Earth, Plant, Animal)** dynamically.
+- Track elements **(Sun, Moon, Fire, Air, Water, Earth, Plant, Animal)** (and also tracks power card plays for Dances up Earthquakes) dynamically.
 - **Interactive UI:**  
-  - **Click/Tap** to add an element.  
-  - **Right-click/Long press** to remove an element.
+  - **Element Tracker**
+    - **Click/Tap*** to add an element.  
+    - **Right-click/Long press*** to remove an element.
+  - **Energy Tracker**
+    - **Click/Tap +** to add energy
+    - **Click/Tap +** to remove energy
 - **Device Detection:** Adjusts UI instructions for **PC vs. Mobile.**
-- **Clear all elements** with a single button.
+- **Clear all elements and power card plays (if present)** with a single button.
 - **Lightweight & Fast:** Built with **React & Tailwind CSS**.
 
 ---
@@ -33,7 +37,7 @@ npm install
 npm run dev
 ```
 
-Then, open http://localhost:3000/ in your browser.
+Then, open http://localhost:5173/SIHelper/ in your browser.
 
 ## 🎨 Technologies Used
 React – Component-based UI.
@@ -42,14 +46,22 @@ Vite – Fast build tool for frontend projects.
 
 ## 📢 How to Use
 Open the app in your browser.
+Select the spirit you are playing.
+Open the tabs you want to use, Elements, Energy, Innates. These can be opened/closed at any time.
 Click/Tap an element icon to add it to the tally.
+Click/Tap + or - to add or remove energy.
 Right-click (PC) / Long press (Mobile) to remove an element.
 Press "Clear" to reset all element tallies.
 
 ## 💡 Future Enhancements
-Add support for multiple players.
-Display threshold abilities based on collected elements.
-Store element states locally for persistence.
+Add a thumbnail interface to select the spirit you're playing.
+Add a win/loss tracker.
+Add a game glossary tab for referencing keywords.
+Add Spirit aspect special innates and abilities.
+Add collapsible special rules for each spirit.
+Add spirit sorting by complexity/difficulty.
+Track which spirits have been played.
+Add a swipeable interface to allow playing multiple spirits.
 
 ## 🤝 Contributing
 Feel free to fork the repository and submit a pull request if you'd like to contribute!

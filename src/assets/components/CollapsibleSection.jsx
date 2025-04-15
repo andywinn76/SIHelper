@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { MdOutlineArrowDropDownCircle } from "react-icons/md";
+import { LuListX } from "react-icons/lu";
+
 
 export default function CollapsibleSection({
   collapsed = false,
@@ -20,13 +21,14 @@ export default function CollapsibleSection({
         <span className="flex items-center gap-2">
           {isOpen ? (
             <>
-              <MdOutlineArrowDropDownCircle />
+              
               {title}
+              <LuListX />
             </>
           ) : (
             <>
-              {hamburger !== "false" && <RxHamburgerMenu className="w-4 h-4" />}
               {title}
+              {hamburger !== "false" && <RxHamburgerMenu className="w-4 h-4" /> }
             </>
           )}
         </span>

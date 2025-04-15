@@ -179,16 +179,16 @@ export const spirits = {
         target: "Quake",
         thresholds: [
           {
-            elements: { fire: 2, earth: 3, cards: 3 },
+            elements: { fire: 2, earth: 3, cardPlays: 3 },
             description: "2 Damage per Quake, to Town/City only.",
           },
           {
-            elements: { fire: 3, earth: 4, cards: 5 },
+            elements: { fire: 3, earth: 4, cardPlays: 5 },
             description:
               "1 Fear. In any number of lands with Quake: 2 Damage per Quake, to Town/City only. Remove 1 Quake.",
           },
           {
-            elements: { fire: 4, earth: 5, cards: 7 },
+            elements: { fire: 4, earth: 5, cardPlays: 7 },
             description:
               "2 Fear. In each land where you removed Quake: 1 Damage to each Invader.",
           },
