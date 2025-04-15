@@ -1,6 +1,5 @@
 export const spirits = {
   "A Spread of Rampant Green": {
-    thumbnail: "A_Spread_of_Rampant_Green.png",
     innatePowers: [
       {
         name: "CREEPERS TEAR INTO MORTAR",
@@ -46,7 +45,6 @@ export const spirits = {
   },
 
   "Breath of Darkness Down Your Spine": {
-    thumbnail: "Breath_of_Darkness_Down_Your_Spine.png",
     innatePowers: [
       {
         name: "LEAVE A TRAIL OF DEATHLY SILENCE",
@@ -102,7 +100,6 @@ export const spirits = {
   },
 
   "Bringer of Dreams and Nightmares": {
-    thumbnail: "Bringer_of_Dreams_and_Nightmares.png",
     innatePowers: [
       {
         name: "Spirits May Yet Dream",
@@ -146,7 +143,6 @@ export const spirits = {
   },
 
   "Dances Up Earthquakes": {
-    thumbnail: "Dances_Up_Earthquakes.png",
     innatePowers: [
       {
         name: "Land Creaks with Tension",
@@ -203,7 +199,6 @@ export const spirits = {
   },
 
   "Devouring Teeth Lurk Underfoot": {
-    thumbnail: "Devouring_Teeth_Lurk_Underfoot.png",
     innatePowers: [
       {
         name: "DEATH APPROACHES FROM BENEATH THE SURFACE",
@@ -235,7 +230,6 @@ export const spirits = {
   },
 
   "Downpour Drenches the World": {
-    thumbnail: "Downpour_Drenches_the_World.png",
     innatePowers: [
       {
         name: "Rain and Mud Suppress Conflict",
@@ -286,7 +280,6 @@ export const spirits = {
   },
 
   "Ember-Eyed Behemoth": {
-    thumbnail: "Ember-Eyed_Behemoth.png",
     innatePowers: [
       {
         name: "Smash, Stomp, and Flatten",
@@ -318,7 +311,6 @@ export const spirits = {
   },
 
   "Eyes Watch from the Trees": {
-    thumbnail: "Eyes_Watch_from_the_Trees.png",
     innatePowers: [
       {
         name: "MISCHIEF AND SABOTAGE",
@@ -350,7 +342,6 @@ export const spirits = {
   },
 
   "Fathomless Mud of the Swamp": {
-    thumbnail: "Fathomless_Mud_of_the_Swamp.png",
     innatePowers: [
       {
         name: "Spreading and Dreadful Mire",
@@ -383,7 +374,6 @@ export const spirits = {
   },
 
   "Finder of Paths Unseen": {
-    thumbnail: "Finder_of_Paths_Unseen.png",
     innatePowers: [
       {
         name: "LAY PATHS THEY CANNOT HELP BUT WALK",
@@ -431,7 +421,6 @@ export const spirits = {
   },
 
   "Fractured Days Split the Sky": {
-    thumbnail: "Fractured_Days_Split_the_Sky.png",
     innatePowers: [
       {
         name: "SLIP THE FLOW OF TIME",
@@ -479,7 +468,6 @@ export const spirits = {
   },
 
   "Heart of the Wildfire": {
-    thumbnail: "Heart_of_the_Wildfire.png",
     innatePowers: [
       {
         name: "Firestorm",
@@ -532,7 +520,6 @@ export const spirits = {
   },
 
   "Hearth-Vigil": {
-    thumbnail: "Hearth-Vigil.png",
     innatePowers: [
       {
         name: "Warn of Impending Conflict",
@@ -587,7 +574,6 @@ export const spirits = {
   },
 
   "Keeper of the Forbidden Wilds": {
-    thumbnail: "Keeper_of_the_Forbidden_Wilds.png",
     innatePowers: [
       {
         name: "Punish Those Who Trespass",
@@ -638,7 +624,6 @@ export const spirits = {
   },
 
   "Lightning's Swift Strike": {
-    thumbnail: "Lightnings_Swift_Strike.png",
     innatePowers: [
       {
         name: "Thundering Destruction",
@@ -668,7 +653,6 @@ export const spirits = {
   },
 
   "Lure of the Deep Wilderness": {
-    thumbnail: "Lure_of_the_Deep_Wilderness.png",
     innatePowers: [
       {
         name: "Forsake Society to Chase After Dreams",
@@ -727,7 +711,6 @@ export const spirits = {
   },
 
   "Many Minds Move as One": {
-    thumbnail: "Many_Minds_Move_as_One.png",
     innatePowers: [
       {
         name: "The Teeming Host Arrives",
@@ -778,7 +761,6 @@ export const spirits = {
   },
 
   "Ocean’s Hungry Grasp": {
-    thumbnail: "Oceans_Hungry_Grasp.png",
     innatePowers: [
       {
         name: "POUND SHIPS TO SPLINTERS",
@@ -824,7 +806,6 @@ export const spirits = {
   },
 
   "Relentless Gaze of the Sun": {
-    thumbnail: "Relentless_Gaze_of_the_Sun.png",
     innatePowers: [
       {
         name: "Scorching Convergence",
@@ -883,7 +864,6 @@ export const spirits = {
   },
 
   "Rising Heat of Stone and Sand": {
-    thumbnail: "Rising_Heat_of_Stone_and_Sand.png",
     innatePowers: [
       {
         name: "Scorch with Waves of Heat",
@@ -915,7 +895,6 @@ export const spirits = {
   },
 
   "River Surges in Sunlight": {
-    thumbnail: "River_Surges_in_Sunlight.png",
     innatePowers: [
       {
         name: "Massive Flooding",
@@ -941,7 +920,6 @@ export const spirits = {
   },
 
   "Serpent Slumbering Beneath the Island": {
-    thumbnail: "Serpent_Slumbering_Beneath_the_Island.png",
     innatePowers: [
       {
         name: "Serpent Wakes in Power",
@@ -993,7 +971,6 @@ export const spirits = {
   },
 
   "Shadows Flicker Like Flame": {
-    thumbnail: "Shadows_Flicker_Like_Flame.png",
     innatePowers: [
       {
         name: "Darkness Swallows the Unwary",
@@ -1021,7 +998,6 @@ export const spirits = {
   },
 
   "Sharp Fangs Behind the Leaves": {
-    thumbnail: "Sharp_Fangs_Behind_the_Leaves.png",
     innatePowers: [
       {
         name: "RANGING HUNT",
@@ -1050,19 +1026,11 @@ export const spirits = {
         target: "Beasts",
         thresholds: [
           {
-            elements: {
-              moon: 1,
-              fire: 1,
-              animal: 4,
-            },
+            elements: { moon: 1, fire: 1, animal: 4 },
             description: "1 Fear and 2 Damage. Remove 1 Beasts.",
           },
           {
-            elements: {
-              moon: 1,
-              fire: 2,
-              animal: 5,
-            },
+            elements: { moon: 1, fire: 2, animal: 5 },
             description: "+1 Fear and +1 Damage.",
           },
         ],
@@ -1071,7 +1039,6 @@ export const spirits = {
   },
 
   "Shifting Memory of Ages": {
-    thumbnail: "Shifting_Memory_of_Ages.png",
     innatePowers: [
       {
         name: "Learn the Invaders' Tactics",
@@ -1080,24 +1047,15 @@ export const spirits = {
         target: "INVADERS",
         thresholds: [
           {
-            elements: {
-              earth: 2,
-            },
+            elements: { earth: 2 },
             description: "Defend 2.",
           },
           {
-            elements: {
-              air: 1,
-              earth: 2,
-            },
+            elements: { air: 1, earth: 2 },
             description: "Instead, Defend 3.",
           },
           {
-            elements: {
-              moon: 2,
-              air: 3,
-              earth: 4,
-            },
+            elements: { moon: 2, air: 3, earth: 4 },
             description:
               "Instead, Defend 2 per card in the Invader discard pile.",
           },
@@ -1110,16 +1068,11 @@ export const spirits = {
         target: "ANY",
         thresholds: [
           {
-            elements: {
-              moon: 1,
-            },
+            elements: { moon: 1 },
             description: "Prepare 1 Element Marker.",
           },
           {
-            elements: {
-              moon: 2,
-              air: 1,
-            },
+            elements: { moon: 2, air: 1 },
             description:
               "Instead, after each of the next three Actions that change which pieces are in target land, Prepare 1 Element Marker.",
           },
@@ -1131,7 +1084,6 @@ export const spirits = {
   },
 
   "Shroud of Silent Mist": {
-    thumbnail: "Shroud_of_Silent_Mist.png",
     innatePowers: [
       {
         name: "Suffocating Shroud",
@@ -1140,36 +1092,20 @@ export const spirits = {
         target: "ANY",
         thresholds: [
           {
-            elements: {
-              moon: 1,
-              air: 2,
-              water: 1,
-            },
+            elements: { moon: 1, air: 2, water: 1 },
             description: "1 Damage.",
           },
           {
-            elements: {
-              moon: 2,
-              air: 3,
-              water: 2,
-            },
+            elements: { moon: 2, air: 3, water: 2 },
             description:
               "For each adjacent land with your Presence, 1 Damage to a different Invader.",
           },
           {
-            elements: {
-              moon: 4,
-              air: 4,
-              water: 3,
-            },
+            elements: { moon: 4, air: 4, water: 3 },
             description: "1 Damage.",
           },
           {
-            elements: {
-              moon: 5,
-              air: 6,
-              water: 4,
-            },
+            elements: { moon: 5, air: 6, water: 4 },
             description: "1 Damage to each Invader.",
           },
         ],
@@ -1181,24 +1117,15 @@ export const spirits = {
         target: "ANY",
         thresholds: [
           {
-            elements: {
-              air: 1,
-              water: 2,
-            },
+            elements: { air: 1, water: 2 },
             description: "Push up to 1 Dahan.",
           },
           {
-            elements: {
-              air: 2,
-              water: 3,
-            },
+            elements: { air: 2, water: 3 },
             description: "Push up to 2 Explorer/Dahan.",
           },
           {
-            elements: {
-              air: 3,
-              water: 4,
-            },
+            elements: { air: 3, water: 4 },
             description: "Push up to 2 Explorer/Dahan.",
           },
         ],
@@ -1207,7 +1134,6 @@ export const spirits = {
   },
 
   "Starlight Seeks Its Form": {
-    thumbnail: "Starlight_Seeks_Its_Form.png",
     innatePowers: [
       {
         name: "Air Moves, Earth Endures",
@@ -1216,15 +1142,11 @@ export const spirits = {
         target: "ANY",
         thresholds: [
           {
-            elements: {
-              air: 3,
-            },
+            elements: { air: 3 },
             description: "Push up to 2 Explorer or 1 Town.",
           },
           {
-            elements: {
-              earth: 3,
-            },
+            elements: { earth: 3 },
             description: "Defend 5.",
           },
         ],
@@ -1236,15 +1158,11 @@ export const spirits = {
         target: "ANY",
         thresholds: [
           {
-            elements: {
-              fire: 3,
-            },
+            elements: { fire: 3 },
             description: "1 Fear. 2 Damage.",
           },
           {
-            elements: {
-              water: 3,
-            },
+            elements: { water: 3 },
             description: "Remove 1 Blight.",
           },
         ],
@@ -1256,16 +1174,12 @@ export const spirits = {
         target: "ANY",
         thresholds: [
           {
-            elements: {
-              plant: 3,
-            },
+            elements: { plant: 3 },
             description:
               "Choose a Spirit with Presence in target land. They gain a Power Card.",
           },
           {
-            elements: {
-              animal: 3,
-            },
+            elements: { animal: 3 },
             description: "1 Damage per Dahan OR Push up to 3 Dahan.",
           },
         ],
@@ -1277,15 +1191,11 @@ export const spirits = {
         target: "ANY",
         thresholds: [
           {
-            elements: {
-              moon: 2,
-            },
+            elements: { moon: 2 },
             description: "Gather up to 1 Explorer/Dahan.",
           },
           {
-            elements: {
-              moon: 3,
-            },
+            elements: { moon: 3 },
             description: "Instead, Gather up to 3 Explorer.",
           },
         ],
@@ -1297,9 +1207,7 @@ export const spirits = {
         target: "YOURSELF",
         thresholds: [
           {
-            elements: {
-              sun: 4,
-            },
+            elements: { sun: 4 },
             description:
               "3 Fear. Gain 1 Energy. Reclaim up to 1 Power Card from play or your discard pile.",
           },
@@ -1309,7 +1217,6 @@ export const spirits = {
   },
 
   "Stone's Unyielding Defiance": {
-    thumbnail: "Stones_Unyielding_Defiance.png",
     innatePowers: [
       {
         name: "Hold the Island Fast with a Bulwark of Will",
@@ -1318,23 +1225,16 @@ export const spirits = {
         target: "YOURSELF",
         thresholds: [
           {
-            elements: {
-              earth: 2,
-            },
+            elements: { earth: 2 },
             description:
               "When Blight is added to one of your lands, you may pay 2 Energy per Blight to take it from the box instead of the Blight Card. (Handle any cascade separately.)",
           },
           {
-            elements: {
-              earth: 4,
-            },
+            elements: { earth: 4 },
             description: "The cost is 1 Energy instead of 2.",
           },
           {
-            elements: {
-              earth: 6,
-              plant: 1,
-            },
+            elements: { earth: 6, plant: 1 },
             description:
               'When an Event or Blight card directly destroys Presence (yours or others\'), you may prevent any number of Presence from being destroyed by paying 1 Energy each. ("Directly" means "not by adding Blight".)',
           },
@@ -1347,24 +1247,17 @@ export const spirits = {
         target: "ANY",
         thresholds: [
           {
-            elements: {
-              earth: 3,
-            },
+            elements: { earth: 3 },
             description:
               "After Invaders deal 1 or more Damage to target land, 2 Damage.",
           },
           {
-            elements: {
-              earth: 5,
-            },
+            elements: { earth: 5 },
             description:
               "Also deal half of the Damage Invaders did to the land (rounding down).",
           },
           {
-            elements: {
-              earth: 7,
-              sun: 2,
-            },
+            elements: { earth: 7, sun: 2 },
             description: "Repeat this Power.",
           },
         ],
@@ -1375,7 +1268,6 @@ export const spirits = {
   },
 
   "Sun-Bright Whirlwind": {
-    thumbnail: "Sun-Bright_Whirlwind.png",
     innatePowers: [
       {
         name: "Violent Windstorms",
@@ -1384,32 +1276,20 @@ export const spirits = {
         target: "ANY",
         thresholds: [
           {
-            elements: {
-              sun: 1,
-              air: 2,
-            },
+            elements: { sun: 1, air: 2 },
             description: "Push up to 1 Explorer.",
           },
           {
-            elements: {
-              sun: 2,
-              air: 3,
-            },
+            elements: { sun: 2, air: 3 },
             description: "1 Fear. Push up to 2 Explorer/Town.",
           },
           {
-            elements: {
-              sun: 2,
-              air: 4,
-            },
+            elements: { sun: 2, air: 4 },
             description:
               "For each Invader Pushed by this Power, 1 Damage in the land it was Pushed to.",
           },
           {
-            elements: {
-              sun: 3,
-              air: 5,
-            },
+            elements: { sun: 3, air: 5 },
             description: "4 Damage (in target land).",
           },
         ],
@@ -1420,7 +1300,6 @@ export const spirits = {
   },
 
   "Towering Roots of the Jungle": {
-    thumbnail: "Towering_Roots_of_the_Jungle.png",
     innatePowers: [
       {
         name: "Shelter Under Towering Branches",
@@ -1429,34 +1308,19 @@ export const spirits = {
         target: "ANY",
         thresholds: [
           {
-            elements: {
-              sun: 1,
-              plant: 1,
-            },
+            elements: { sun: 1, plant: 1 },
             description: "Gather up to 1 Dahan.",
           },
           {
-            elements: {
-              sun: 1,
-              earth: 1,
-              plant: 2,
-            },
+            elements: { sun: 1, earth: 1, plant: 2 },
             description: "Gather up to 1 Explorer.",
           },
           {
-            elements: {
-              sun: 2,
-              earth: 1,
-              plant: 3,
-            },
+            elements: { sun: 2, earth: 1, plant: 3 },
             description: "Gather up to 1 Town.",
           },
           {
-            elements: {
-              sun: 3,
-              earth: 2,
-              plant: 4,
-            },
+            elements: { sun: 3, earth: 2, plant: 4 },
             description: "Gather up to 1 City.",
           },
         ],
@@ -1468,27 +1332,15 @@ export const spirits = {
         target: "Towering Roots of the Jungle + INVADERS",
         thresholds: [
           {
-            elements: {
-              sun: 1,
-              moon: 1,
-              plant: 2,
-            },
+            elements: { sun: 1, moon: 1, plant: 2 },
             description: "1 Fear. Remove 1 Explorer/Town.",
           },
           {
-            elements: {
-              sun: 2,
-              moon: 1,
-              plant: 3,
-            },
+            elements: { sun: 2, moon: 1, plant: 3 },
             description: "1 Fear. Remove 1 Explorer/Town.",
           },
           {
-            elements: {
-              sun: 2,
-              moon: 2,
-              plant: 4,
-            },
+            elements: { sun: 2, moon: 2, plant: 4 },
             description: "1 Fear. Remove 1 Invader.",
           },
         ],
@@ -1497,7 +1349,6 @@ export const spirits = {
   },
 
   Thunderspeaker: {
-    thumbnail: "Thunderspeaker.png",
     innatePowers: [
       {
         name: "Gather the Warriors",
@@ -1540,7 +1391,6 @@ export const spirits = {
   },
 
   "Vengeance as a Burning Plague": {
-    thumbnail: "Vengeance_as_a_Burning_Plague.png",
     innatePowers: [
       {
         name: "Epidemics Run Rampant",
@@ -1549,26 +1399,15 @@ export const spirits = {
         target: "Disease",
         thresholds: [
           {
-            elements: {
-              fire: 1,
-              animal: 3,
-            },
+            elements: { fire: 1, animal: 3 },
             description: "1 Damage per Disease.",
           },
           {
-            elements: {
-              water: 1,
-              fire: 2,
-              animal: 4,
-            },
+            elements: { water: 1, fire: 2, animal: 4 },
             description: "+1 Damage per Disease.",
           },
           {
-            elements: {
-              water: 3,
-              fire: 3,
-              animal: 5,
-            },
+            elements: { water: 3, fire: 3, animal: 5 },
             description:
               "+1 Damage per Disease. 1 Fear per Disease (max 5). Remove 1 Disease.",
           },
@@ -1583,31 +1422,19 @@ export const spirits = {
         target: "Town/City",
         thresholds: [
           {
-            elements: {
-              air: 3,
-            },
+            elements: { air: 3 },
             description: "This Power has Plus1 Range.",
           },
           {
-            elements: {
-              fire: 3,
-              animal: 1,
-            },
+            elements: { fire: 3, animal: 1 },
             description: "1 Damage.",
           },
           {
-            elements: {
-              fire: 4,
-              animal: 2,
-            },
+            elements: { fire: 4, animal: 2 },
             description: "+2 Damage.",
           },
           {
-            elements: {
-              fire: 5,
-              air: 2,
-              animal: 2,
-            },
+            elements: { fire: 5, air: 2, animal: 2 },
             description: "+3 Damage.",
           },
         ],
@@ -1616,7 +1443,6 @@ export const spirits = {
   },
 
   "Vital Strength of the Earth": {
-    thumbnail: "Vital_Strength_of_the_Earth.png",
     innatePowers: [
       {
         name: "Gift of Strength",
@@ -1643,7 +1469,6 @@ export const spirits = {
   },
 
   "Wandering Voice Keens Delirium": {
-    thumbnail: "Wandering_Voice_Keens_Delirium.png",
     innatePowers: [
       {
         name: "Inscrutable Journeying",
@@ -1652,30 +1477,19 @@ export const spirits = {
         target: "YOURSELF",
         thresholds: [
           {
-            elements: {
-              air: 1,
-            },
+            elements: { air: 1 },
             description: "You may Push Wandering Voice Keens Delirium.",
           },
           {
-            elements: {
-              air: 3,
-            },
+            elements: { air: 3 },
             description: "You may Push Wandering Voice Keens Delirium.",
           },
           {
-            elements: {
-              air: 5,
-            },
+            elements: { air: 5 },
             description: "You may Push Wandering Voice Keens Delirium.",
           },
           {
-            elements: {
-              moon: 2,
-              fire: 1,
-              air: 4,
-              plant: 1,
-            },
+            elements: { moon: 2, fire: 1, air: 4, plant: 1 },
             description: "Empower Wandering Voice Keens Delirium.",
           },
         ],
@@ -1689,26 +1503,16 @@ export const spirits = {
         target: "Strife",
         thresholds: [
           {
-            elements: {
-              moon: 1,
-              air: 2,
-            },
+            elements: { moon: 1, air: 2 },
             description: "1 Fear per Moon you have.",
           },
           {
-            elements: {
-              sun: 1,
-              air: 2,
-            },
+            elements: { sun: 1, air: 2 },
             description:
               "1 Damage per Sun you have, to Invaders with Strife only.",
           },
           {
-            elements: {
-              moon: 1,
-              sun: 1,
-              air: 4,
-            },
+            elements: { moon: 1, sun: 1, air: 4 },
             description:
               "For each Sun Moon pair you have, Destroy 1 Invader with Strife.",
           },
@@ -1718,7 +1522,6 @@ export const spirits = {
   },
 
   "Wounded Waters Bleeding": {
-    thumbnail: "Wounded_Waters_Bleeding.png",
     innatePowers: [
       {
         name: "Swirl and Spill",
@@ -1727,24 +1530,15 @@ export const spirits = {
         target: "ANY",
         thresholds: [
           {
-            elements: {
-              water: 2,
-            },
+            elements: { water: 2 },
             description: "Push up to 2 Explorer/Dahan/Blight.",
           },
           {
-            elements: {
-              water: 3,
-              animal: 1,
-            },
+            elements: { water: 3, animal: 1 },
             description: "1 Fear. Push up to 2 Town/Presence/Beasts.",
           },
           {
-            elements: {
-              water: 5,
-              plant: 2,
-              animal: 2,
-            },
+            elements: { water: 5, plant: 2, animal: 2 },
             description:
               "In one land pushed into, Downgrade all Town and all City.",
           },
@@ -1757,24 +1551,15 @@ export const spirits = {
         target: "ANY",
         thresholds: [
           {
-            elements: {
-              animal: 2,
-            },
+            elements: { animal: 2 },
             description: "1 Fear. 1 Damage. Push 1 Dahan.",
           },
           {
-            elements: {
-              water: 1,
-              animal: 3,
-            },
+            elements: { water: 1, animal: 3 },
             description: "1 Damage. Add 1 Beasts.",
           },
           {
-            elements: {
-              fire: 2,
-              water: 2,
-              animal: 5,
-            },
+            elements: { fire: 2, water: 2, animal: 5 },
             description: "1 Fear. 4 Damage. Add 1 Disease.",
           },
         ],

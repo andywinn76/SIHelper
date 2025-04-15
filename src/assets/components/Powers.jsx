@@ -16,16 +16,20 @@ function Powers() {
     );
   }
 
+  if (!selectedSpirit) {
+    return null
+  }
+
   if (!spiritData) {
     return <div>No data found for selected spirit.</div>;
   }
 
   const powers = spiritData.innatePowers;
 
-  return (
+  return (    
     <div className="powers-list">
       <div className="power-card">
-        <SpiritSelector />
+        {/* <SpiritSelector /> */}
         {powers.map((power, powerIndex) => (
           <div key={power.name || powerIndex}>
             <h3 className="power-title uppercase tracking-wider">
