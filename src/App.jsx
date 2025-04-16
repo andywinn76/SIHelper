@@ -40,6 +40,10 @@ function App() {
             >
               <Instructions isTouchDevice={isTouchDevice} />
             </CollapsibleSection>
+            <CollapsibleSection title="Innates">
+              <SpiritSelector />
+              <Powers currentElements={currentElements} />
+            </CollapsibleSection>
             <CollapsibleSection title="Elements">
               <ElementSelector
                 selectedIcons={selectedIcons}
@@ -48,18 +52,16 @@ function App() {
               />
             </CollapsibleSection>
             {/* <Powers selectedIcons={selectedIcons}/> */}
-            <CollapsibleSection title="Energy">
+            <CollapsibleSection title="Energy" collapsed={true}>
               <EnergyTracker />
             </CollapsibleSection>
-            <CollapsibleSection title="Innates">
-              <SpiritSelector />
-              <Powers currentElements={currentElements} />
-            </CollapsibleSection>
+            
             {/* <Fonts /> */}
           </GlassBG>
         </Wrapper>
       </ElementProvider>
     </SpiritProvider>
+    
   );
 }
 

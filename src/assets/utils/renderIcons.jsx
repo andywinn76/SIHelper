@@ -4,7 +4,7 @@ const BASE_URL = import.meta.env.BASE_URL;
 
 export function renderIcons(text) {
   const parts = text.split(
-    /(Fast|Slow|City|Town|Dahan|Air|Moon|Fire|Sun|Earth|Plant|Animal|Fear|INVADERS|Explorer|Blight|Presence|Sacred|Range 0|Range 1|Range 2|Range 3|Range 4|Player|None|Beasts|Incarna|Breath of Darkness|Endless Dark|Ember-Eyed Behemoth|Impending|Quake|PowerCard|Land without Blight|Towering Roots of the Jungle|Wandering Voice Keens Delirium|Wilds|Badlands|Disease|Strife|Plus1 Range|Jungle)/g
+    /(Fast|Slow|City|Town|Dahan|Air|Moon|Fire|Sun|Earth|Plant|Animal|Fear|INVADERS|Explorer|Blight|Presence|DestroyedPresence|Sacred|Range 0|Range 1|Range 2|Range 3|Range 4|Player|None|Beasts|Incarna|Breath of Darkness|Endless Dark|Ember-Eyed Behemoth|Impending|Quake|PowerCard|Land without Blight|Towering Roots of the Jungle|Wandering Voice Keens Delirium|Wilds|Badlands|Disease|Strife|Plus1 Range|Jungle)/g
   );
 
   return parts.map((part, i) => {
@@ -386,6 +386,16 @@ export function renderIcons(text) {
           src={`${BASE_URL}/images/icons/jungle.png`}
           alt="jungle land"
           className="inline-block w-auto h-8 mx-1"
+        />
+      );
+    }
+    if (part === "DestroyedPresence") {
+      return (
+        <img
+          key={i}
+          src={`${BASE_URL}/images/icons/DestroyedPresence.png`}
+          alt="destroyed presence"
+          className="inline-block w-auto h-5 mx-1"
         />
       );
     }

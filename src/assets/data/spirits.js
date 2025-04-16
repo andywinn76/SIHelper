@@ -278,7 +278,7 @@ export const spirits = {
           {
             elements: { water: 7, earth: 2, plant: 3 },
             description:
-              "When Blight would be added to target land, instead leave it on the card. (Only once per Action.)",
+              "When Blight would be added to target land, instead leave it on the card.",
           },
         ],
       },
@@ -472,6 +472,55 @@ export const spirits = {
             elements: { sun: 2, moon: 3, air: 2 },
             description:
               "Instead of returning-and-shuffling, you may put the card you looked at on the bottom of its deck. You may not do this for cards specially placed during Setup.",
+          },
+        ],
+      },
+    ],
+  },
+
+  "Grinning Trickster Stirs Up Trouble": {
+    thumbnail: "Grinning_Trickster_Stirs_Up_Trouble.png",
+    innatePowers: [
+      {
+        name: "Let's See What Happens",
+        speed: "Fast",
+        range: "Range 1",
+        target: "INVADERS",
+        thresholds: [
+          {
+            elements: { moon: 1, fire: 1, air: 2 },
+            description: "Discard Minor Powers from the deck until you get one that targets a land. Use its text effects on target land immediately, ignoring normal Range/Targeting restrictions. All 'up to' instructions must be used at max. value. Treat all 'OR's as 'AND's. (It is not considered a card of yours or a card in play. Its effects are treated as performed by this Power, as if its text were copied here.)",
+
+          },
+          {
+            elements: { moon: 2, fire: 1, air: 2 },
+            description: "You may Forget a Power Card to gain the just-used Power Card (to hand) and 1 Energy.",
+          },
+        ],
+      },
+      {
+        name: "WHY DON'T YOU AND THEM FIGHT",
+        speed: "Fast",
+        range: "Range 0",
+        target: "INVADERS",
+        thresholds: [
+          {
+            elements: { moon: 3 },
+            description: "This Power may be Slow.",
+          },
+          {
+            elements: { air: 3 },
+            description: "Add 1 Strife.",
+          },
+          {
+            elements: { sun: 3, fire: 3 },
+            description:
+              "1 Invader and 1 Dahan deal Damage to each other.",
+          },
+          {
+            elements: { animal: 3 },
+            description:
+              "If target land has Beasts, 2 Damage. Otherwise, you may Gather 1 Beasts.",
           },
         ],
       },
@@ -871,7 +920,7 @@ export const spirits = {
           {
             elements: { sun: 3, plant: 1 },
             description:
-              "Choose another Spirit. They Add 1 Destroyed Presence to one of your lands.",
+              "Choose another Spirit. They Add 1 DestroyedPresence to one of your lands.",
           },
           {
             elements: { sun: 3, water: 1, plant: 1 },
@@ -924,16 +973,16 @@ export const spirits = {
         target: "ANY",
         thresholds: [
           {
-            elements: { water: 2, sun: 1 },
+            elements: { sun: 1, water: 2 },
             description: "Push one Explorer/Town.",
           },
           {
-            elements: { water: 3, sun: 2 },
+            elements: { sun: 2, water: 3  },
             description: "Instead, 2 Damage, push up to 3 Explorer/Town",
           },
           {
-            elements: { water: 4, sun: 3, earth: 1 },
-            description: "Instead, 2 Damage to each Explorer",
+            elements: { sun: 3, water: 4, earth: 1 },
+            description: "Instead, 2 Damage to each Invader",
           },
         ],
       },
@@ -1003,17 +1052,17 @@ export const spirits = {
         thresholds: [
           {
             elements: { moon: 2, fire: 1 },
-            description: "Gather one Explorer.",
+            description: "Gather 1 Explorer.",
           },
           {
             elements: { moon: 3, fire: 2 },
             description:
-              "Destroy up to 2 explorer. 1 Fear per Explorer destroyed.",
+              "Destroy up to 2 Explorer. 1 Fear per Explorer destroyed.",
           },
           {
             elements: { moon: 4, fire: 3, air: 2 },
             description:
-              "3 Damage. 1 Fear per Explorer destroyed by this Damage.",
+              "3 Damage. 1 Fear per Invader destroyed by this Damage.",
           },
         ],
       },
@@ -1322,7 +1371,7 @@ export const spirits = {
               earth: 2,
             },
             description:
-              "When Blight is added to one of your lands, you may pay 2 Energy per Blight to take it from the box instead of the Blight Card. (Handle any cascade separately.)",
+              "When Blight is added to one of your lands, you may pay 2 Energy per Blight to take it from the box instead of the blight Card. (Handle any cascade separately.)",
           },
           {
             elements: {
@@ -1336,7 +1385,7 @@ export const spirits = {
               plant: 1,
             },
             description:
-              'When an Event or Blight card directly destroys Presence (yours or others\'), you may prevent any number of Presence from being destroyed by paying 1 Energy each. ("Directly" means "not by adding Blight".)',
+              'When an Event or blight card directly destroys Presence (yours or others\'), you may prevent any number of Presence from being destroyed by paying 1 Energy each. ("Directly" means "not by adding Blight".)',
           },
         ],
       },
@@ -1615,6 +1664,89 @@ export const spirits = {
     ],
   },
 
+  "Volcano Looming High": {
+  thumbnail: "Volcano_Looming_High.png",
+  innatePowers: [
+    {
+      name: "EXPLOSIVE ERUPTION",
+      speed: "Fast",
+      range: "Range 0",
+      target: "ANY",
+      special: "Destroy X (1 or more) of your Presence in target land; DestroyedPresence checks how many you destroyed. This Power does Damage (separately and equally) to both Invaders and Dahan. Ranges below can't be increased.",
+      thresholds: [
+        {
+          elements: {
+            fire: 2,
+            earth: 2,
+          },
+          description: "2 DestroyedPresence  In one land within Range 1, X Damage.",
+        },
+        {
+          elements: {
+            fire: 3,
+            earth: 3,
+          },
+          description: "4 DestroyedPresence  Generate X Fear.",
+        },
+        {
+          elements: {
+            fire: 4,
+            air: 2,
+            earth: 4,
+          },
+          description:
+            "6 DestroyedPresence  In each land within Range 1, 4 Damage. Add 1 Blight to target land; doing so does not Destroy your Presence.",
+        },
+        {
+          elements: {
+            fire: 5,
+            air: 3,
+            earth: 5,
+          },
+          description:
+            "10 DestroyedPresence  In each land within Range 2, +4 Damage. In each land adjacent to the target, add 1 Blight if it doesn't have any.",
+        },
+      ],
+    },
+    {
+      name: "POWERED BY THE FURNACE OF THE EARTH",
+      speed: "Slow",
+      range: "Range 0",
+      target: "ANY",
+      thresholds: [
+        {
+          elements: {
+            earth: 3,
+          },
+          description: "Add 1 of your destroyed Presence.",
+        },
+        {
+          elements: {
+            fire: 3,
+          },
+          cost: "Pay 2 Energy",
+          description: "Pay 2 energy. Gain a Power Card.",
+        },
+        {
+          elements: {
+            earth: 4,
+            fire: 4,
+          },
+          description: "Move up to 2 of your Presence from other lands to target land.",
+        },
+        {
+          elements: {
+            fire: 5,
+          },
+          description:
+            "Return up to 2 of your destroyed Presence to your Presence tracks.",
+        },
+      ],
+    },
+  ],
+},
+
+
   "Vital Strength of the Earth": {
     thumbnail: "Vital_Strength_of_the_Earth.png",
     innatePowers: [
@@ -1627,7 +1759,7 @@ export const spirits = {
           {
             elements: { sun: 1, earth: 2, plant: 2 },
             description:
-              "Once this turn, target Spirit may Repeat 1 Power Card with Energy cost of 1 or less.",
+              "Once this turn, Target Spirit may Repeat 1 Power Card with Energy cost of 1 or less.",
           },
           {
             elements: { sun: 2, earth: 3, plant: 2 },

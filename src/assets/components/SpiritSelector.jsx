@@ -53,7 +53,7 @@ function SpiritSelector() {
                 />
               </div>
 
-              <span className="text-[0.5rem] mt-1 text-center w-20 break-words">
+              <span className="text-[0.75rem] mt-1 text-center w-20 break-words">
                 {name}
               </span>
             </div>
