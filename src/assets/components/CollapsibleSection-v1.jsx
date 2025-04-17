@@ -2,43 +2,37 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { LuListX } from "react-icons/lu";
-import { LuGripVertical } from "react-icons/lu"; 
+
 
 export default function CollapsibleSection({
   collapsed = false,
   hamburger = true,
   title,
   children,
-  dragListeners = {},
 }) {
   const [isOpen, setIsOpen] = useState(!collapsed);
 
   return (
     <div className="overflow-hidden rounded-md">
-      <div className="flex items-center justify-between w-full px-2 py-1 font-mouse text-xl text-gray-600 border-t-2 border-gray-500/40 hover:bg-white/5 transition bg-blue-400/15">
-        {/* Drag handle on the left */}
-        <div
-          style={{ touchAction: "none" }}
-          className="cursor-grab pr-2 text-gray-500 select-none"
-          {...dragListeners}
-        >
-          <LuGripVertical />
-        </div>
-
-        {/* Clickable title (centered) */}
-        <button
-          onClick={() => setIsOpen(!isOpen)}
-          className="flex-1 text-center flex justify-center items-center gap-2"
-        >
-          {title}
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="w-full px-2 py-1 font-mouse text-xl text-gray-600 border-t-2 border-gray-500/40 hover:bg-white/5 transition flex justify-center items-center bg-blue-400/15"
+      >
+        <span className="flex items-center gap-2">
           {isOpen ? (
-            <LuListX />
+            <>
+              
+              {title}
+              <LuListX />
+            </>
           ) : (
-            hamburger !== "false" && <RxHamburgerMenu className="w-4 h-4" />
+            <>
+              {title}
+              {hamburger !== "false" && <RxHamburgerMenu className="w-4 h-4" /> }
+            </>
           )}
-        </button>
-      </div>
-
+        </span>
+      </button>
       <AnimatePresence initial={false}>
         {isOpen && (
           <motion.div
@@ -49,7 +43,10 @@ export default function CollapsibleSection({
             transition={{ duration: 0.3 }}
             className="overflow-hidden"
           >
-            <div>{children}</div>
+            <div className="">
+              {/* <div className="px-4 py-2"></div> */}
+              {children}
+            </div>
           </motion.div>
         )}
       </AnimatePresence>

@@ -80,7 +80,7 @@ function Powers() {
               </tbody>
             </table>
             {power.special && (
-              <p className="px-3 font-lato text-gray-800">
+              <p className="icon-sizing px-3 pb-2 font-lato text-gray-800 border-b-2 border-blue-100 border-opacity-10">
                 {renderIcons(power.special)}
               </p>
             )}
@@ -101,7 +101,7 @@ function Powers() {
                           {renderElementIcons(threshold.elements)}
                         </div>
                       </td>
-                      <td className="threshold-effect">
+                      <td className="threshold-effect icon-sizing">
                         {renderIcons(threshold.description)}
                       </td>
                     </tr>
