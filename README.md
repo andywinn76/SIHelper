@@ -54,7 +54,7 @@ Then, open http://localhost:5173/SIHelper/ in your browser.
 - Press "Clear" to reset all element tallies.
 
 ## 💡 Future Enhancements
-- Add a thumbnail interface to select the spirit you're playing.
+- COMPLETE - Add a thumbnail interface to select the spirit you're playing.
 - Add a win/loss tracker.
 - Add a game glossary tab for referencing keywords.
 - Add Spirit aspect special innates and abilities.
@@ -62,6 +62,7 @@ Then, open http://localhost:5173/SIHelper/ in your browser.
 - Add spirit sorting by complexity/difficulty.
 - Track which spirits have been played.
 - Add a swipeable interface to allow playing multiple spirits.
+- COMPLETE - Add ability to re-order sections to allow user customization.
 
 ## 🤝 Contributing
 Feel free to fork the repository and submit a pull request if you'd like to contribute!
