@@ -3,399 +3,87 @@ import React from "react";
 const BASE_URL = import.meta.env.BASE_URL;
 
 export function renderIcons(text) {
-  const parts = text.split(
-    /(Fast|Slow|City|Town|Dahan|Air|Moon|Fire|Sun|Earth|Plant|Animal|Fear|INVADERS|Explorer|Blight|Presence|DestroyedPresence|Sacred|Range 0|Range 1|Range 2|Range 3|Range 4|Player|None|Beasts|Incarna|Breath of Darkness|Endless Dark|Ember-Eyed Behemoth|Impending|Quake|PowerCard|Land without Blight|Towering Roots of the Jungle|Wandering Voice Keens Delirium|Wilds|Badlands|Disease|Strife|Plus1 Range|Jungle)/g
-  );
+
+  const normalizeIconMap = (map) =>
+    Object.fromEntries(
+      Object.entries(map).map(([key, val]) =>
+        typeof val === "string" ? [key, { src: val }] : [key, val]
+      )
+    );
+
+  const iconMap = normalizeIconMap({
+    // Elements (SVG or PNG)
+    AIR: "elements/air.png",
+    MOON: "elements/moon.png",
+    FIRE: "elements/fire.png",
+    SUN: "elements/sun.png",
+    EARTH: "elements/earth.png",
+    PLANT: "elements/plant.png",
+    ANIMAL: "elements/animal.png",
+  
+    // Ranges
+    "RANGE 0": {src: "icons/range_0.png", className: "inline-block w-auto h-5 mx-1"},
+    "RANGE 1": {src: "icons/range_1.png", className: "inline-block w-auto h-5 mx-1"},
+    "RANGE 2": {src: "icons/range_2.png", className: "inline-block w-auto h-5.5 mx-1"},
+    "RANGE 3": {src: "icons/range_3.png", className: "inline-block w-auto h-5 mx-1"},
+    "RANGE 4": {src: "icons/range_4.png", className: "inline-block w-auto h-5 mx-1"},
+    "PLUS 1 RANGE": {src: "icons/range_plus_1.png", className: "inline-block w-auto h-5 mx-1"},
+    NONE: {
+      src: "icons/no-range.png",
+      className: "inline-block w-auto h-0.75 mx-1",
+    },
+  
+    // Spirit board icons
+    CITY: "icons/city.png",
+    TOWN: { src: "icons/town.png", className: "inline-block w-auto h-5 mx-1"},
+    DAHAN: "icons/dahan.png",
+    EXPLORER: "icons/explorer.png",
+    BEASTS: "icons/beast.png",
+    BLIGHT: "icons/blight.png",
+    WILDS: "icons/wilds.png",
+    BADLANDS: "icons/badlands.png",
+    DISEASE: "icons/disease.png",
+    STRIFE: "icons/strife.png",
+    FEAR: "icons/fear.png",
+    JUNGLE: "icons/jungle.png",
+  
+    // Special terms
+    FAST: "icons/fast.png",
+    SLOW: "icons/slow.png",
+    PRESENCE: "icons/presence.png",
+    "DESTROYED PRESENCE": "icons/DestroyedPresence.png",
+    "SACRED SITE": {src: "icons/sacred-site.png", className: "inline-block w-auto h-6 mx-0.5"},
+    PLAYER: "icons/player-spirit.png",
+    "POWER CARD": "icons/PowerCard.svg",
+    "LAND WITHOUT BLIGHT": {
+      src: "icons/NoBlight.svg",
+      className: "inline-block w-auto h-8 mx-1",
+    },
+  
+    // Spirit-specific
+    "BREATH OF DARKNESS": "icons/BreathOfDarkness.svg",
+    "ENDLESS DARK": "icons/endlessdark.svg",
+    "EMBER-EYED BEHEMOTH": "icons/EmberEyedBehemoth.svg",
+    IMPENDING: "icons/Impending.svg",
+    QUAKE: "icons/Quake.svg",
+    "TOWERING ROOTS OF THE JUNGLE": "icons/ToweringRoots.svg",
+    "WANDERING VOICE KEENS DELIRIUM": "icons/WanderingVoice.svg",
+  });
+  
+  const keywords = Object.keys(iconMap);
+  const regex = new RegExp(`(${keywords.join("|")})`, "g");
+  const parts = text.split(regex);
 
   return parts.map((part, i) => {
-    if (part === "Fast") {
+    const icon = iconMap[part];
+    if (icon) {
+      const { src, className = "inline-block h-6 w-auto mx-1" } = icon; // default here 👈
       return (
         <img
           key={i}
-          src={`${BASE_URL}/images/icons/fast.png`}
-          alt="Fast"
-          className="inline-block w-auto h-6 mx-1"
-        />
-      );
-    }
-    if (part === "Slow") {
-      return (
-        <img
-          key={i}
-          src={`${BASE_URL}/images/icons/slow.png`}
-          alt="Presence"
-          className="inline-block w-auto h-6 mx-1"
-        />
-      );
-    }
-    if (part === "Presence") {
-      return (
-        <img
-          key={i}
-          src={`${BASE_URL}/images/icons/presence.png`}
-          alt="Presence"
-          className="inline-block w-auto h-5 mx-1"
-        />
-      );
-    }
-    if (part === "Sacred") {
-      return (
-        <img
-          key={i}
-          src={`${BASE_URL}/images/icons/sacred-site.png`}
-          alt="Sacred Site"
-          className="inline-block w-auto h-6 mx-1"
-        />
-      );
-    }
-    if (part === "Player") {
-      return (
-        <img
-          key={i}
-          src={`${BASE_URL}/images/icons/player-spirit.png`}
-          alt="Player spirit"
-          className="inline-block w-auto h-6 mx-1"
-        />
-      );
-    }
-    if (part === "None") {
-      return (
-        <img
-          key={i}
-          src={`${BASE_URL}/images/icons/no-range.png`}
-          alt="None"
-          className="inline-block w-auto h-0.5 mx-1"
-        />
-      );
-    }
-    if (part === "Range 0") {
-      return (
-        <img
-          key={i}
-          src={`${BASE_URL}/images/icons/range_0.png`}
-          alt="Range 0"
-          className="inline-block w-auto h-5 mx-1"
-        />
-      );
-    }
-    if (part === "Range 1") {
-      return (
-        <img
-          key={i}
-          src={`${BASE_URL}/images/icons/range_1.png`}
-          alt="Range 1"
-          className="inline-block w-auto h-5 mx-1"
-        />
-      );
-    }
-    if (part === "Range 2") {
-      return (
-        <img
-          key={i}
-          src={`${BASE_URL}/images/icons/range_2.png`}
-          alt="Range 2"
-          className="inline-block w-auto h-5 mx-1"
-        />
-      );
-    }
-    if (part === "City") {
-      return (
-        <img
-          key={i}
-          src={`${BASE_URL}/images/icons/city.png`}
-          alt="City"
-          className="inline-block w-auto h-6 mx-1"
-        />
-      );
-    }
-    if (part === "Town") {
-      return (
-        <img
-          key={i}
-          src={`${BASE_URL}/images/icons/town.png`}
-          alt="Town"
-          className="inline-block w-auto h-5 mx-1"
-        />
-      );
-    }
-    if (part === "Fear") {
-      return (
-        <img
-          key={i}
-          src={`${BASE_URL}/images/icons/fear.png`}
-          alt="fear"
-          className="inline-block w-auto h-5 mx-1"
-        />
-      );
-    }
-    if (part === "Dahan") {
-      return (
-        <img
-          key={i}
-          src={`${BASE_URL}/images/icons/dahan.png`}
-          alt="Dahan"
-          className="inline-block w-auto h-5 mx-1"
-        />
-      );
-    }
-    if (part === "Fire") {
-      return (
-        <img
-          key={i}
-          src={`${BASE_URL}/images/elements/fire.png`}
-          alt="Fire"
-          className="inline-block w-auto h-5 mx-1"
-        />
-      );
-    }
-    if (part === "Air") {
-      return (
-        <img
-          key={i}
-          src={`${BASE_URL}/images/elements/air.png`}
-          alt="Air"
-          className="inline-block w-auto h-5 mx-1"
-        />
-      );
-    }
-    if (part === "Moon") {
-      return (
-        <img
-          key={i}
-          src={`${BASE_URL}/images/elements/moon.png`}
-          alt="Moon"
-          className="inline-block w-auto h-5 mx-1"
-        />
-      );
-    }
-    if (part === "Sun") {
-      return (
-        <img
-          key={i}
-          src={`${BASE_URL}/images/elements/sun.png`}
-          alt="Sun"
-          className="inline-block w-auto h-5 mx-1"
-        />
-      );
-    }
-    if (part === "Plant") {
-      return (
-        <img
-          key={i}
-          src={`${BASE_URL}/images/elements/plant.png`}
-          alt="Plant"
-          className="inline-block w-auto h-5 mx-1"
-        />
-      );
-    }
-    if (part === "Earth") {
-      return (
-        <img
-          key={i}
-          src={`${BASE_URL}/images/elements/earth.png`}
-          alt="Earth"
-          className="inline-block w-auto h-5 mx-1"
-        />
-      );
-    }
-    if (part === "INVADERS") {
-      return (
-        <img
-          key={i}
-          src={`${BASE_URL}/images/icons/invaders.png`}
-          alt="Invaders"
-          className="inline-block w-auto h-5 mx-1"
-        />
-      );
-    }
-    if (part === "Explorer") {
-      return (
-        <img
-          key={i}
-          src={`${BASE_URL}/images/icons/explorer.png`}
-          alt="explorer"
-          className="inline-block w-auto h-5 mx-1"
-        />
-      );
-    }
-    if (part === "Blight") {
-      return (
-        <img
-          key={i}
-          src={`${BASE_URL}/images/icons/blight.png`}
-          alt="blight"
-          className="inline-block w-auto h-5 mx-1"
-        />
-      );
-    }
-    if (part === "Beasts") {
-      return (
-        <img
-          key={i}
-          src={`${BASE_URL}/images/icons/beast.png`}
-          alt="beasts"
-          className="inline-block w-auto h-5 mx-1"
-        />
-      );
-    }
-    if (part === "Breath of Darkness") {
-      return (
-        <img
-          key={i}
-          src={`${BASE_URL}/images/icons/BreathOfDarkness.svg`}
-          alt="Breath of Darkness"
-          className="inline-block w-auto h-5 mx-1"
-        />
-      );
-    }
-    if (part === "Endless Dark") {
-      return (
-        <img
-          key={i}
-          src={`${BASE_URL}/images/icons/endlessdark.svg`}
-          alt="Endless Dark"
-          className="inline-block w-auto h-5 mx-1"
-        />
-      );
-    }
-    if (part === "Wandering Voice Keens Delirium") {
-      return (
-        <img
-          key={i}
-          src={`${BASE_URL}/images/icons/WanderingVoice.svg`}
-          alt="Wandering Voice Keens Delirium"
-          className="inline-block w-auto h-5 mx-1"
-        />
-      );
-    }
-
-    if (part === "Ember-Eyed Behemoth") {
-      return (
-        <img
-          key={i}
-          src={`${BASE_URL}/images/icons/EmberEyedBehemoth.svg`}
-          alt="Ember-Eyed Behemoth Incarnate token"
-          className="inline-block w-auto h-5 mx-1"
-        />
-      );
-    }
-    if (part === "Towering Roots of the Jungle") {
-      return (
-        <img
-          key={i}
-          src={`${BASE_URL}/images/icons/ToweringRoots.svg`}
-          alt="Towering Roots of the Jungle"
-          className="inline-block w-auto h-5 mx-1"
-        />
-      );
-    }
-    if (part === "Impending") {
-      return (
-        <img
-          key={i}
-          src={`${BASE_URL}/images/icons/Impending.svg`}
-          alt="Impending icon"
-          className="inline-block w-auto h-5 mx-1"
-        />
-      );
-    }
-    if (part === "Quake") {
-      return (
-        <img
-          key={i}
-          src={`${BASE_URL}/images/icons/Quake.svg`}
-          alt="Quake icon"
-          className="inline-block w-auto h-5 mx-1"
-        />
-      );
-    }
-    if (part === "PowerCard") {
-      return (
-        <img
-          key={i}
-          src={`${BASE_URL}/images/icons/PowerCard.svg`}
-          alt="Power Card Icon"
-          className="inline-block w-auto h-5 mx-1"
-        />
-      );
-    }
-    if (part === "Land without Blight") {
-      return (
-        <img
-          key={i}
-          src={`${BASE_URL}/images/icons/NoBlight.svg`}
-          alt="Land without Blight"
-          className="inline-block w-auto h-8 mx-1"
-        />
-      );
-    }
-    if (part === "Wilds") {
-      return (
-        <img
-          key={i}
-          src={`${BASE_URL}/images/icons/wilds.png`}
-          alt="wilds"
-          className="inline-block w-auto h-8 mx-1"
-        />
-      );
-    }
-    if (part === "Badlands") {
-      return (
-        <img
-          key={i}
-          src={`${BASE_URL}/images/icons/badlands.png`}
-          alt="badlands"
-          className="inline-block w-auto h-8 mx-1"
-        />
-      );
-    }
-    if (part === "Disease") {
-      return (
-        <img
-          key={i}
-          src={`${BASE_URL}/images/icons/disease.png`}
-          alt="Disease"
-          className="inline-block w-auto h-8 mx-1"
-        />
-      );
-    }
-    if (part === "Strife") {
-      return (
-        <img
-          key={i}
-          src={`${BASE_URL}/images/icons/strife.png`}
-          alt="Strife"
-          className="inline-block w-auto h-6 mx-1"
-        />
-      );
-    }
-    if (part === "Plus1 Range") {
-      return (
-        <img
-          key={i}
-          src={`${BASE_URL}/images/icons/range_plus_1.png`}
-          alt="plus 1 range"
-          className="inline-block w-auto h-8 mx-1"
-        />
-      );
-    }
-    if (part === "Jungle") {
-      return (
-        <img
-          key={i}
-          src={`${BASE_URL}/images/icons/jungle.png`}
-          alt="jungle land"
-          className="inline-block w-auto h-8 mx-1"
-        />
-      );
-    }
-    if (part === "DestroyedPresence") {
-      return (
-        <img
-          key={i}
-          src={`${BASE_URL}/images/icons/DestroyedPresence.png`}
-          alt="destroyed presence"
-          className="inline-block w-auto h-5 mx-1"
+          src={`${BASE_URL}/images/${src}`}
+          alt={part.toLowerCase()}
+          className={`inline-block ${className}`}
         />
       );
     }

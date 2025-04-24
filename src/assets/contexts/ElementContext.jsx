@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState } from "react";
 
-const allElements = ["fire", "air", "earth", "water", "sun", "moon", "plant", "animal"];
+const allElements = ["sun", "moon", "fire", "air", "water", "earth", "plant", "animal"];
 
 const ElementContext = createContext();
 

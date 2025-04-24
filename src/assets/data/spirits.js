@@ -4,13 +4,13 @@ export const spirits = {
     innatePowers: [
       {
         name: "CREEPERS TEAR INTO MORTAR",
-        speed: "Slow",
-        range: "Range 0",
+        speed: "SLOW",
+        range: "RANGE 0",
         target: "ANY",
         thresholds: [
           {
             elements: { moon: 1, plant: 2 },
-            description: "1 Damage to 1 Town / City.",
+            description: "1 Damage to 1 TOWN / CITY.",
           },
           {
             elements: { moon: 2, plant: 3 },
@@ -24,8 +24,8 @@ export const spirits = {
       },
       {
         name: "ALL-ENVELOPING GREEN",
-        speed: "Fast",
-        range: "Sacred Range 1",
+        speed: "FAST",
+        range: "SACRED SITE RANGE 1",
         target: "ANY",
         thresholds: [
           {
@@ -38,7 +38,7 @@ export const spirits = {
           },
           {
             elements: { water: 3, earth: 1, plant: 5 },
-            description: "Also, remove 1 Blight.",
+            description: "Also, remove 1 BLIGHT.",
           },
         ],
       },
@@ -50,51 +50,51 @@ export const spirits = {
     innatePowers: [
       {
         name: "LEAVE A TRAIL OF DEATHLY SILENCE",
-        speed: "Fast",
-        range: "None",
+        speed: "FAST",
+        range: "NONE",
         target: "YOURSELF",
         thresholds: [
           {
             elements: { moon: 2, animal: 1 },
             description:
-              "1 Damage at Breath of Darkness. You may Push Breath of Darkness.",
+              "1 Damage at BREATH OF DARKNESS. You may Push BREATH OF DARKNESS.",
           },
           {
             elements: { moon: 3, air: 1, animal: 1 },
             description:
-              "1 Damage at Breath of Darkness. You may Push Breath of Darkness.",
+              "1 Damage at BREATH OF DARKNESS. You may Push BREATH OF DARKNESS.",
           },
           {
             elements: { moon: 4, air: 2, animal: 2 },
             description:
-              "1 Damage at Breath of Darkness. You may Push Breath of Darkness.",
+              "1 Damage at BREATH OF DARKNESS. You may Push BREATH OF DARKNESS.",
           },
           {
             elements: { moon: 5, air: 2, animal: 3 },
             description:
-              "Move Breath of Darkness to Endless Dark. It Brings 1 Invader (from its land).",
+              "Move BREATH OF DARKNESS to ENDLESS DARK. It Brings 1 Invader (from its land).",
           },
         ],
       },
       {
         name: "LOST IN THE ENDLESS DARK",
-        speed: "Slow",
-        range: "None",
-        target: "Endless Dark",
+        speed: "SLOW",
+        range: "NONE",
+        target: "ENDLESS DARK",
         thresholds: [
           {
             elements: { moon: 2, air: 1 },
             description:
-              "1 Fear per Invader (max. 4). Downgrade up to 1 Invader. (Downgrading Removes Explorer)",
+              "1 FEAR per Invader (max. 4). Downgrade up to 1 Invader. (Downgrading Removes EXPLORER)",
           },
           {
             elements: { moon: 4, air: 3 },
             description:
-              "1 Fear per Invader (max. 4). Downgrade any number of invaders.",
+              "1 FEAR per Invader (max. 4). Downgrade any number of invaders.",
           },
           {
             elements: { moon: 3, animal: 2 },
-            description: "Add 1 Beasts.",
+            description: "Add 1 BEASTS.",
           },
         ],
       },
@@ -106,14 +106,14 @@ export const spirits = {
     innatePowers: [
       {
         name: "Spirits May Yet Dream",
-        speed: "Fast",
-        range: "None",
-        target: "Any Player",
+        speed: "FAST",
+        range: "NONE",
+        target: "Any PLAYER",
         thresholds: [
           {
             elements: { moon: 2, air: 2 },
             description:
-              "Turn any face down Fear Card face-up. (It's earned/resolved normally, but players can see what's coming)",
+              "Turn any face down FEAR Card face-up. (It's earned/resolved normally, but players can see what's coming)",
           },
           {
             elements: { moon: 3 },
@@ -124,21 +124,21 @@ export const spirits = {
       },
       {
         name: "Night Terrors",
-        speed: "Fast",
-        range: "Range 0",
+        speed: "FAST",
+        range: "RANGE 0",
         target: "Invaders",
         thresholds: [
           {
             elements: { moon: 1, air: 1 },
-            description: "1 Fear.",
+            description: "1 FEAR.",
           },
           {
             elements: { moon: 2, air: 1, animal: 1 },
-            description: "+1 Fear.",
+            description: "+1 FEAR.",
           },
           {
             elements: { moon: 3, air: 2, animal: 1 },
-            description: "+1 Fear.",
+            description: "+1 FEAR.",
           },
         ],
       },
@@ -150,54 +150,54 @@ export const spirits = {
     innatePowers: [
       {
         name: "Land Creaks with Tension",
-        speed: "Fast",
-        range: "None",
+        speed: "FAST",
+        range: "NONE",
         target: "Yourself",
         thresholds: [
           {
             elements: { earth: 1 },
             description:
-              "If you have at least 1 Impending, Add 1 Quake in one of your lands.",
+              "If you have at least 1 IMPENDING, Add 1 QUAKE in one of your lands.",
           },
           {
             elements: { moon: 1, earth: 1 },
             description:
-              "In one of your lands, Defend 1 per Impending (max. 3).",
+              "In one of your lands, Defend 1 per IMPENDING (max. 3).",
           },
           {
             elements: { moon: 1, earth: 2 },
             description:
-              "If you have at least 3 Impending, Add 1 Quake in one of your lands.",
+              "If you have at least 3 IMPENDING, Add 1 QUAKE in one of your lands.",
           },
           {
             elements: { moon: 2, earth: 3 },
             description:
-              "In one of your lands, Defend 1 per Impending (max. 3).",
+              "In one of your lands, Defend 1 per IMPENDING (max. 3).",
           },
         ],
       },
       {
         name: "Earth Shudders, Buildings Fall",
-        speed: "Slow",
-        range: "Range 0",
-        target: "Quake",
+        speed: "SLOW",
+        range: "RANGE 0",
+        target: "QUAKE",
         thresholds: [
           {
             elements: { fire: 2, earth: 3, cardPlays: 3 },
-            description: "2 Damage per Quake, to Town/City only.",
+            description: "2 Damage per QUAKE, to TOWN/CITY only.",
           },
           {
             elements: { fire: 3, earth: 4, cardPlays: 5 },
             description:
-              "1 Fear. In any number of lands with Quake: 2 Damage per Quake, to Town/City only. Remove 1 Quake.",
+              "1 FEAR. In any number of lands with QUAKE: 2 Damage per QUAKE, to TOWN/CITY only. Remove 1 QUAKE.",
           },
           {
             elements: { fire: 4, earth: 5, cardPlays: 7 },
             description:
-              "2 Fear. In each land where you removed Quake: 1 Damage to each Invader.",
+              "2 FEAR. In each land where you removed QUAKE: 1 Damage to each Invader.",
           },
         ],
-        special: "PowerCard is the # of Power Cards you have in play.",
+        special: "POWER CARD is the # of Power Cards you have in play.",
       },
     ],
   },
@@ -207,14 +207,14 @@ export const spirits = {
     innatePowers: [
       {
         name: "DEATH APPROACHES FROM BENEATH THE SURFACE",
-        speed: "Slow",
-        range: "Range 1",
+        speed: "SLOW",
+        range: "RANGE 1",
         target: "Invaders",
         thresholds: [
           {
             elements: { fire: 1, animal: 1 },
             description:
-              "If you don't have Presence in target land, Gather 1 of your Presence. (This is required.)",
+              "If you don't have PRESENCE in target land, Gather 1 of your PRESENCE. (This is required.)",
           },
           {
             elements: { fire: 2, earth: 1, animal: 2 },
@@ -227,7 +227,7 @@ export const spirits = {
           },
           {
             elements: { fire: 4, earth: 2, animal: 5 },
-            description: "2 Fear. 4 Damage.",
+            description: "2 FEAR. 4 Damage.",
           },
         ],
       },
@@ -239,46 +239,46 @@ export const spirits = {
     innatePowers: [
       {
         name: "Rain and Mud Suppress Conflict",
-        speed: "Fast",
-        range: "None",
+        speed: "FAST",
+        range: "NONE",
         target: "Yourself",
         thresholds: [
           {
             elements: { air: 1, water: 3 },
             description:
-              "Each of your Presence grants Defend 1 and lowers Dahan counterattack damage by 1. (Total, in its land.)",
+              "Each of your PRESENCE grants Defend 1 and lowers DAHAN counterattack damage by 1. (Total, in its land.)",
           },
           {
             elements: { water: 5, earth: 1 },
             description:
-              "Each of your Presence grants Defend 1 and lowers Dahan counterattack damage by 1.",
+              "Each of your PRESENCE grants Defend 1 and lowers DAHAN counterattack damage by 1.",
           },
           {
             elements: { air: 3, water: 9, earth: 2 },
             description:
-              "2 Fear. In your lands, invaders and Dahan have -1 Health (min 1).",
+              "2 FEAR. In your lands, invaders and DAHAN have -1 Health (min 1).",
           },
         ],
       },
       {
         name: "Water Nourishes Life's Growth",
-        speed: "Fast",
-        range: "Range 0",
+        speed: "FAST",
+        range: "RANGE 0",
         target: "Any",
         thresholds: [
           {
             elements: { water: 3, plant: 2 },
             description:
-              "Gain 1 Energy. You may remove 1 Blight by removing one of your Presence (from target land).",
+              "Gain 1 Energy. You may remove 1 BLIGHT by removing one of your PRESENCE (from target land).",
           },
           {
             elements: { water: 5, earth: 1, plant: 2 },
-            description: "Gain +1 Energy. Gather up to 1 Dahan.",
+            description: "Gain +1 Energy. Gather up to 1 DAHAN.",
           },
           {
             elements: { water: 7, earth: 2, plant: 3 },
             description:
-              "When Blight would be added to target land, instead leave it on the card.",
+              "When BLIGHT would be added to target land, instead leave it on the card.",
           },
         ],
       },
@@ -290,9 +290,9 @@ export const spirits = {
     innatePowers: [
       {
         name: "Smash, Stomp, and Flatten",
-        speed: "Slow",
-        range: "None",
-        target: "Ember-Eyed Behemoth",
+        speed: "SLOW",
+        range: "NONE",
+        target: "EMBER-EYED BEHEMOTH",
         thresholds: [
           {
             elements: { fire: 2, earth: 1 },
@@ -300,19 +300,19 @@ export const spirits = {
           },
           {
             elements: { fire: 3, earth: 1, plant: 1 },
-            description: "1 Damage. Push 1 Dahan.",
+            description: "1 Damage. Push 1 DAHAN.",
           },
           {
             elements: { fire: 4, earth: 2, plant: 1 },
-            description: "1 Fear. 1 Damage.",
+            description: "1 FEAR. 1 Damage.",
           },
           {
             elements: { fire: 5, earth: 2, plant: 2 },
-            description: "2 Damage. 2 Damage to Dahan.",
+            description: "2 Damage. 2 Damage to DAHAN.",
           },
         ],
         special:
-          "If Ember-Eyed Behemoth is Empowered, you may Repeat this Power once each turn. (You may take other Actions before Repeating, including The Behemoth Rises.)",
+          "If EMBER-EYED BEHEMOTH is Empowered, you may Repeat this Power once each turn. (You may take other Actions before Repeating, including The Behemoth Rises.)",
       },
     ],
   },
@@ -322,29 +322,29 @@ export const spirits = {
     innatePowers: [
       {
         name: "MISCHIEF AND SABOTAGE",
-        speed: "Fast",
-        range: "Sacred Range 1",
+        speed: "FAST",
+        range: "SACRED SITE RANGE 1",
         target: "Invaders",
         thresholds: [
           {
             elements: { moon: 1, plant: 1 },
-            description: "1 Fear and Defend 2.",
+            description: "1 FEAR and Defend 2.",
           },
           {
             elements: { moon: 2, plant: 3 },
-            description: "Instead, 1 Fear and Defend 4.",
+            description: "Instead, 1 FEAR and Defend 4.",
           },
           {
             elements: { moon: 2, air: 2, plant: 4 },
-            description: "Instead, 3 Fear and Defend 6.",
+            description: "Instead, 3 FEAR and Defend 6.",
           },
           {
             elements: { moon: 3, air: 3, plant: 5 },
-            description: "Instead, 5 Fear and Defend 12.",
+            description: "Instead, 5 FEAR and Defend 12.",
           },
         ],
         specialNote:
-          "(This is all one Power, so your Special Rule 'Dahan Trust the Watchers' can Gather only 1 Dahan.)",
+          "(This is all one Power, so your Special Rule 'DAHAN Trust the Watchers' can Gather only 1 DAHAN.)",
       },
     ],
   },
@@ -354,22 +354,22 @@ export const spirits = {
     innatePowers: [
       {
         name: "Spreading and Dreadful Mire",
-        speed: "Slow",
-        range: "Sacred Range 1",
+        speed: "SLOW",
+        range: "SACRED SITE RANGE 1",
         target: "Invaders",
         thresholds: [
           {
             elements: { water: 1 },
             description:
-              "Move 1 Presence from the origin Sacred to target land. (This is required.)",
+              "Move 1 PRESENCE from the origin SACRED SITE to target land. (This is required.)",
           },
           {
             elements: { moon: 1, water: 2, earth: 1 },
-            description: "1 Fear. 1 Damage. Push 1 Dahan.",
+            description: "1 FEAR. 1 Damage. Push 1 DAHAN.",
           },
           {
             elements: { moon: 2, water: 3, earth: 2 },
-            description: "1 Fear. 1 Damage. Push 1 Dahan.",
+            description: "1 FEAR. 1 Damage. Push 1 DAHAN.",
           },
           {
             elements: { moon: 3, water: 4, earth: 3, plant: 2 },
@@ -387,18 +387,18 @@ export const spirits = {
     innatePowers: [
       {
         name: "LAY PATHS THEY CANNOT HELP BUT WALK",
-        speed: "Fast",
-        range: "Range 0",
+        speed: "FAST",
+        range: "RANGE 0",
         target: "Any",
         thresholds: [
           {
             elements: { moon: 2, air: 2 },
             description:
-              "Push up to half (rounded down) of invaders from target land. Do likewise for Dahan, Presence, and Beasts (each separately).",
+              "Push up to half (rounded down) of invaders from target land. Do likewise for DAHAN, PRESENCE, and BEASTS (each separately).",
           },
           {
             elements: { sun: 2, air: 2 },
-            description: "Push up to 1 Invader/Dahan/Presence/Beasts.",
+            description: "Push up to 1 Invader/DAHAN/PRESENCE/BEASTS.",
           },
           {
             elements: { moon: 2, air: 4, water: 3 },
@@ -408,8 +408,8 @@ export const spirits = {
       },
       {
         name: "CLOSE THE WAYS",
-        speed: "Fast",
-        range: "Range 1",
+        speed: "FAST",
+        range: "RANGE 1",
         target: "Any",
         thresholds: [
           {
@@ -435,13 +435,13 @@ export const spirits = {
     innatePowers: [
       {
         name: "SLIP THE FLOW OF TIME",
-        speed: "Fast",
-        range: "None",
-        target: "Any Player",
+        speed: "FAST",
+        range: "NONE",
+        target: "Any PLAYER",
         thresholds: [
           {
             elements: { moon: 3, air: 1 },
-            description: "Target Spirit may Resolve 1 Slow now.",
+            description: "Target Spirit may Resolve 1 SLOW now.",
           },
           {
             elements: { sun: 2, moon: 2 },
@@ -459,8 +459,8 @@ export const spirits = {
       },
       {
         name: "VISIONS OF A SHIFTING FUTURE",
-        speed: "Slow",
-        range: "None",
+        speed: "SLOW",
+        range: "NONE",
         target: "YOURSELF",
         thresholds: [
           {
@@ -483,9 +483,9 @@ export const spirits = {
     innatePowers: [
       {
         name: "Let's See What Happens",
-        speed: "Fast",
-        range: "Range 1",
-        target: "INVADERS",
+        speed: "FAST",
+        range: "RANGE 1",
+        target: "Invaders",
         thresholds: [
           {
             elements: { moon: 1, fire: 1, air: 2 },
@@ -500,27 +500,27 @@ export const spirits = {
       },
       {
         name: "WHY DON'T YOU AND THEM FIGHT",
-        speed: "Fast",
-        range: "Range 0",
-        target: "INVADERS",
+        speed: "FAST",
+        range: "RANGE 0",
+        target: "Invaders",
         thresholds: [
           {
             elements: { moon: 3 },
-            description: "This Power may be Slow.",
+            description: "This Power may be SLOW.",
           },
           {
             elements: { air: 3 },
-            description: "Add 1 Strife.",
+            description: "Add 1 STRIFE.",
           },
           {
             elements: { sun: 3, fire: 3 },
             description:
-              "1 Invader and 1 Dahan deal Damage to each other.",
+              "1 Invader and 1 DAHAN deal Damage to each other.",
           },
           {
             elements: { animal: 3 },
             description:
-              "If target land has Beasts, 2 Damage. Otherwise, you may Gather 1 Beasts.",
+              "If target land has BEASTS, 2 Damage. Otherwise, you may Gather 1 BEASTS.",
           },
         ],
       },
@@ -532,48 +532,48 @@ export const spirits = {
     innatePowers: [
       {
         name: "Firestorm",
-        speed: "Fast",
-        range: "Range 0",
-        target: "Blight",
+        speed: "FAST",
+        range: "RANGE 0",
+        target: "BLIGHT",
         thresholds: [
           {
             elements: { plant: 1 },
-            description: "1 Damage per 2 Fire you have.",
+            description: "1 Damage per 2 FIRE you have.",
           },
           {
             elements: { plant: 3 },
-            description: "Instead, 1 Damage per Fire you have.",
+            description: "Instead, 1 Damage per FIRE you have.",
           },
           {
             elements: { fire: 4, air: 2 },
             description:
-              "Split this Power's Damage however desired between target land and any number of your lands with Blight.",
+              "Split this Power's Damage however desired between target land and any number of your lands with BLIGHT.",
           },
           {
             elements: { fire: 7 },
             description:
-              "In a land with Blight where you have Presence, Push all Dahan. Destroy all invaders and Beasts. Add 1 Blight.",
+              "In a land with BLIGHT where you have PRESENCE, Push all DAHAN. Destroy all invaders and BEASTS. Add 1 BLIGHT.",
           },
         ],
       },
       {
         name: "The Burned Land Regrows",
-        speed: "Slow",
-        range: "Range 0",
+        speed: "SLOW",
+        range: "RANGE 0",
         target: "Any",
         thresholds: [
           {
             elements: { fire: 4, plant: 1 },
             description:
-              "If target land has 2 Blight or more, remove 1 Blight.",
+              "If target land has 2 BLIGHT or more, remove 1 BLIGHT.",
           },
           {
             elements: { fire: 4, plant: 2 },
-            description: "Instead, remove 1 Blight.",
+            description: "Instead, remove 1 BLIGHT.",
           },
           {
             elements: { fire: 5, plant: 2, earth: 2 },
-            description: "Remove another Blight.",
+            description: "Remove another BLIGHT.",
           },
         ],
       },
@@ -585,46 +585,46 @@ export const spirits = {
     innatePowers: [
       {
         name: "Warn of Impending Conflict",
-        speed: "Fast",
-        range: "None",
+        speed: "FAST",
+        range: "NONE",
         target: "Yourself",
         thresholds: [
           {
             elements: { sun: 2, earth: 1 },
             description:
-              "In one of your lands, 1 Dahan deals Damage before Invaders during Ravages. (Choose a land when Invaders Ravage there.)",
+              "In one of your lands, 1 DAHAN deals Damage before Invaders during Ravages. (Choose a land when Invaders Ravage there.)",
           },
           {
             elements: { sun: 3, earth: 1 },
             description:
-              "In that land, another Dahan deals Damage before Invaders during Ravages.",
+              "In that land, another DAHAN deals Damage before Invaders during Ravages.",
           },
           {
             elements: { sun: 4, earth: 2 },
             description:
-              "In that land, all Dahan deal Damage before Invaders during Ravages.",
+              "In that land, all DAHAN deal Damage before Invaders during Ravages.",
           },
           {
             elements: { sun: 5, earth: 3 },
             description:
-              "Instead, all Dahan in all of your lands deal Damage before Invaders during Ravages.",
+              "Instead, all DAHAN in all of your lands deal Damage before Invaders during Ravages.",
           },
         ],
       },
       {
         name: "Keep Watch for New Incursions",
-        speed: "Fast",
-        range: "Sacred Dahan Range 1",
+        speed: "FAST",
+        range: "SACRED SITE DAHAN RANGE 1",
         target: "Any",
         thresholds: [
           {
             elements: { animal: 1 },
-            description: "Gather up to 2 Dahan, from your lands only.",
+            description: "Gather up to 2 DAHAN, from your lands only.",
           },
           {
             elements: { sun: 1, air: 2, animal: 3 },
             description:
-              "Once this turn after Invaders are added or moved into target land, 1 Damage per Dahan in target land, to those added/moved Invaders only.",
+              "Once this turn after Invaders are added or moved into target land, 1 Damage per DAHAN in target land, to those added/moved Invaders only.",
           },
           {
             elements: { sun: 2, air: 3, animal: 4 },
@@ -640,17 +640,17 @@ export const spirits = {
     innatePowers: [
       {
         name: "Punish Those Who Trespass",
-        speed: "Slow",
-        range: "Range 0",
+        speed: "SLOW",
+        range: "RANGE 0",
         target: "Any",
         thresholds: [
           {
             elements: { sun: 2, fire: 1, plant: 2 },
-            description: "2 Damage. Destroy 1 Dahan.",
+            description: "2 Damage. Destroy 1 DAHAN.",
           },
           {
             elements: { sun: 2, fire: 2, plant: 3 },
-            description: "+1 Damage per Sun/Plant you have.",
+            description: "+1 Damage per SUN/PLANT you have.",
           },
           {
             elements: { plant: 4 },
@@ -661,25 +661,25 @@ export const spirits = {
       },
       {
         name: "Spreading Wilds",
-        speed: "Slow",
-        range: "Range 1",
-        target: "Land without Blight",
+        speed: "SLOW",
+        range: "RANGE 1",
+        target: "LAND WITHOUT BLIGHT",
         thresholds: [
           {
             elements: { sun: 2 },
-            description: "Push 1 Explorer from target land per 2 Sun you have.",
+            description: "Push 1 EXPLORER from target land per 2 SUN you have.",
           },
           {
             elements: { plant: 1 },
-            description: "If target land has no Explorer, add 1 Wilds.",
+            description: "If target land has no EXPLORER, add 1 WILDS.",
           },
           {
             elements: { plant: 3 },
-            description: "This Power has Plus1 Range.",
+            description: "This Power has PLUS 1 RANGE.",
           },
           {
             elements: { air: 1 },
-            description: "This Power has Plus1 Range.",
+            description: "This Power has PLUS 1 RANGE.",
           },
         ],
       },
@@ -691,25 +691,25 @@ export const spirits = {
     innatePowers: [
       {
         name: "Thundering Destruction",
-        speed: "Slow",
-        range: "Sacred Range 1",
+        speed: "SLOW",
+        range: "SACRED SITE RANGE 1",
         target: "ANY",
         thresholds: [
           {
             elements: { fire: 3, air: 2 },
-            description: "Destroy 1 Town",
+            description: "Destroy 1 TOWN",
           },
           {
             elements: { fire: 4, air: 3 },
-            description: "Instead, you may Destroy 1 City",
+            description: "Instead, you may Destroy 1 CITY",
           },
           {
             elements: { fire: 5, air: 4, water: 1 },
-            description: "Also, Destroy 1 City/1 Town",
+            description: "Also, Destroy 1 CITY/1 TOWN",
           },
           {
             elements: { fire: 5, air: 5, water: 2 },
-            description: "Also, Destroy 1 City/1 Town",
+            description: "Also, Destroy 1 CITY/1 TOWN",
           },
         ],
       },
@@ -721,21 +721,21 @@ export const spirits = {
     innatePowers: [
       {
         name: "Forsake Society to Chase After Dreams",
-        speed: "Slow",
-        range: "Range 1",
-        target: "INVADERS",
+        speed: "SLOW",
+        range: "RANGE 1",
+        target: "Invaders",
         thresholds: [
           {
             elements: { moon: 2 },
-            description: "Replace 1 Explorer with 1 Explorer.",
+            description: "Replace 1 EXPLORER with 1 EXPLORER.",
           },
           {
             elements: { moon: 2, air: 1 },
-            description: "Instead, replace 1 Town with 2 Explorer.",
+            description: "Instead, replace 1 TOWN with 2 EXPLORER.",
           },
           {
             elements: { moon: 3, air: 2, animal: 1 },
-            description: "Instead, replace 1 City with 3 Explorer.",
+            description: "Instead, replace 1 CITY with 3 EXPLORER.",
           },
           {
             elements: { air: 4 },
@@ -743,22 +743,22 @@ export const spirits = {
           },
         ],
         special:
-          "After this Power replaces pieces with Explorer: Gather any number of those Explorer into your lands. If target land has any Town/City remaining, 1 Fear.",
+          "After this Power replaces pieces with EXPLORER: Gather any number of those EXPLORER into your lands. If target land has any TOWN/CITY remaining, 1 FEAR.",
       },
       {
         name: "Never Heard From Again",
-        speed: "Slow",
-        range: "Range 0",
+        speed: "SLOW",
+        range: "RANGE 0",
         target: "Inland",
         thresholds: [
           {
             elements: { fire: 1, plant: 3 },
-            description: "Add 1 Badlands.",
+            description: "Add 1 BADLANDS.",
           },
           {
             elements: { plant: 2 },
             description:
-              "Destroy up to 2 Explorer per Badlands/Beasts/Disease/Wilds.",
+              "Destroy up to 2 EXPLORER per BADLANDS/BEASTS/DISEASE/WILDS.",
           },
           {
             elements: { plant: 4, animal: 1 },
@@ -770,7 +770,7 @@ export const spirits = {
           },
         ],
         special:
-          "If this Power destroys any Explorer, 1 Fear. If this Power destroys 5 or more Explorer, +1 Fear.",
+          "If this Power destroys any EXPLORER, 1 FEAR. If this Power destroys 5 or more EXPLORER, +1 FEAR.",
       },
     ],
   },
@@ -780,48 +780,48 @@ export const spirits = {
     innatePowers: [
       {
         name: "The Teeming Host Arrives",
-        speed: "Fast",
-        range: "Range 2",
+        speed: "FAST",
+        range: "RANGE 2",
         target: "Any",
         thresholds: [
           {
             elements: { air: 2, animal: 1 },
-            description: "Gather up to 1 Beasts.",
+            description: "Gather up to 1 BEASTS.",
           },
           {
             elements: { air: 3, water: 1, animal: 2 },
-            description: "Instead, Gather up to 1 Beasts per Air you have.",
+            description: "Instead, Gather up to 1 BEASTS per AIR you have.",
           },
           {
             elements: { fire: 1, air: 4, animal: 2 },
-            description: "Push up to 3 Beasts.",
+            description: "Push up to 3 BEASTS.",
           },
         ],
       },
       {
         name: "Beset and Confound the Invaders",
-        speed: "Fast",
-        range: "Range 2",
-        target: "INVADERS",
+        speed: "FAST",
+        range: "RANGE 2",
+        target: "Invaders",
         thresholds: [
           {
             elements: { air: 1, animal: 2 },
-            description: "2 Beasts: 2 Fear and Defend 2.",
+            description: "2 BEASTS: 2 FEAR and Defend 2.",
           },
           {
             elements: { air: 2, animal: 3 },
-            description: "3 Beasts: Instead, 3 Fear and Defend 4.",
+            description: "3 BEASTS: Instead, 3 FEAR and Defend 4.",
           },
           {
             elements: { air: 3, animal: 4 },
-            description: "4 Beasts: Instead, 4 Fear and Defend 7.",
+            description: "4 BEASTS: Instead, 4 FEAR and Defend 7.",
           },
           {
             elements: { air: 4, earth: 1, animal: 5 },
-            description: "5 Beasts: Instead, 6 Fear and Defend 10.",
+            description: "5 BEASTS: Instead, 6 FEAR and Defend 10.",
           },
         ],
-        special: "Beasts (below) checks the number of Beasts in target land",
+        special: "BEASTS (below) checks the number of BEASTS in target land",
       },
     ],
   },
@@ -831,41 +831,41 @@ export const spirits = {
     innatePowers: [
       {
         name: "POUND SHIPS TO SPLINTERS",
-        speed: "Fast",
-        range: "Range 0",
+        speed: "FAST",
+        range: "RANGE 0",
         target: "Coastal",
         thresholds: [
           {
             elements: { moon: 1, air: 1, water: 2 },
-            description: "1 Fear.",
+            description: "1 FEAR.",
           },
           {
             elements: { moon: 2, air: 1, water: 3 },
-            description: "+1 Fear.",
+            description: "+1 FEAR.",
           },
           {
             elements: { moon: 3, air: 2, water: 4 },
-            description: "+2 Fear",
+            description: "+2 FEAR",
           },
         ],
       },
       {
         name: "OCEAN BREAKS THE SHORE",
-        speed: "Slow",
-        range: "Range 0",
+        speed: "SLOW",
+        range: "RANGE 0",
         target: "Coastal",
         thresholds: [
           {
             elements: { water: 2, earth: 1 },
-            description: "Drown 1 Town.",
+            description: "Drown 1 TOWN.",
           },
           {
             elements: { water: 3, earth: 2 },
-            description: "You may instead Drown 1 City.",
+            description: "You may instead Drown 1 CITY.",
           },
           {
             elements: { water: 4, earth: 3 },
-            description: "Also, Drown 1 Town / City.",
+            description: "Also, Drown 1 TOWN / CITY.",
           },
         ],
       },
@@ -877,50 +877,50 @@ export const spirits = {
     innatePowers: [
       {
         name: "Scorching Convergence",
-        speed: "Slow",
-        range: "Sacred Range 1",
+        speed: "SLOW",
+        range: "SACRED SITE RANGE 1",
         target: "Any",
         thresholds: [
           {
             elements: { sun: 2 },
             description:
-              "Move all of your Presence from origin land directly to target land. 1 Damage, to Town/City only.",
+              "Move all of your PRESENCE from origin land directly to target land. 1 Damage, to TOWN/CITY only.",
           },
           {
             elements: { sun: 3, fire: 1 },
             description:
-              "3 Damage to Invaders. 3 Damage to Dahan. Add 1 Blight without cascading.",
+              "3 Damage to Invaders. 3 Damage to DAHAN. Add 1 BLIGHT without cascading.",
           },
           {
             elements: { sun: 4, fire: 2, air: 1 },
-            description: "3 Fear if this Power destroyed any Invaders.",
+            description: "3 FEAR if this Power destroyed any Invaders.",
           },
           {
             elements: { sun: 5, fire: 3, air: 2 },
             description:
-              "1 Damage per remaining Presence of yours in target land.",
+              "1 Damage per remaining PRESENCE of yours in target land.",
           },
         ],
       },
       {
         name: "Consider a Harmonious Nature",
-        speed: "Fast",
-        range: "None",
+        speed: "FAST",
+        range: "NONE",
         target: "Yourself",
         thresholds: [
           {
             elements: { sun: 3, moon: 1 },
             description:
-              "When your Powers would Add Blight, you may Destroy 1 Presence instead (there or elsewhere).",
+              "When your Powers would Add BLIGHT, you may Destroy 1 PRESENCE instead (there or elsewhere).",
           },
           {
             elements: { sun: 3, water: 1 },
-            description: "Your Powers don't damage or destroy Dahan.",
+            description: "Your Powers don't damage or destroy DAHAN.",
           },
           {
             elements: { sun: 3, plant: 1 },
             description:
-              "Choose another Spirit. They Add 1 DestroyedPresence to one of your lands.",
+              "Choose another Spirit. They Add 1 DESTROYED PRESENCE to one of your lands.",
           },
           {
             elements: { sun: 3, water: 1, plant: 1 },
@@ -936,13 +936,13 @@ export const spirits = {
     innatePowers: [
       {
         name: "Scorch with Waves of Heat",
-        speed: "Slow",
-        range: "Sacred Range 1",
+        speed: "SLOW",
+        range: "SACRED SITE RANGE 1",
         target: "Any",
         thresholds: [
           {
             elements: { fire: 2, air: 2 },
-            description: "2 Damage to Explorer only.",
+            description: "2 Damage to EXPLORER only.",
           },
           {
             elements: { fire: 3, earth: 2 },
@@ -968,17 +968,17 @@ export const spirits = {
     innatePowers: [
       {
         name: "Massive Flooding",
-        speed: "Slow",
-        range: "Sacred Range 1",
+        speed: "SLOW",
+        range: "SACRED SITE RANGE 1",
         target: "ANY",
         thresholds: [
           {
             elements: { sun: 1, water: 2 },
-            description: "Push one Explorer/Town.",
+            description: "Push one EXPLORER/TOWN.",
           },
           {
             elements: { sun: 2, water: 3  },
-            description: "Instead, 2 Damage, push up to 3 Explorer/Town",
+            description: "Instead, 2 Damage, push up to 3 EXPLORER/TOWN",
           },
           {
             elements: { sun: 3, water: 4, earth: 1 },
@@ -994,47 +994,47 @@ export const spirits = {
     innatePowers: [
       {
         name: "Serpent Wakes in Power",
-        speed: "Slow",
-        range: "None",
+        speed: "SLOW",
+        range: "NONE",
         target: "Yourself",
         thresholds: [
           {
             elements: { fire: 2, water: 1, plant: 1 },
             description:
-              "Gain 1 Energy. Other spirits with any Absorbed Presence also gain 1 Energy.",
+              "Gain 1 Energy. Other spirits with any Absorbed PRESENCE also gain 1 Energy.",
           },
           {
             elements: { water: 2, earth: 3, plant: 2 },
             description:
-              "Add 1 Presence to Range 1. Other spirits with 2 or more Absorbed Presence may do likewise.",
+              "Add 1 PRESENCE to RANGE 1. Other spirits with 2 or more Absorbed PRESENCE may do likewise.",
           },
           {
             elements: { fire: 3, water: 3, earth: 3, plant: 3 },
             description:
-              "Gain a Major Power without Forgetting. Other Spirits with 3 or more Absorbed Presence may do likewise.",
+              "Gain a Major Power without Forgetting. Other Spirits with 3 or more Absorbed PRESENCE may do likewise.",
           },
         ],
       },
       {
         name: "Serpent Rouses in Anger",
-        speed: "Slow",
-        range: "Range 0",
+        speed: "SLOW",
+        range: "RANGE 0",
         target: "Any",
         thresholds: [
           {
             elements: { fire: 1, earth: 1 },
             description:
-              "For each Fire + Earth you have, 1 Damage to 1 Town / City.",
+              "For each FIRE + EARTH you have, 1 Damage to 1 TOWN / CITY.",
           },
           {
             elements: { moon: 2, earth: 2 },
             description:
-              "For each 2 Moon + 2 Earth you have, 2 Fear and you may Push 1 Town from target land.",
+              "For each 2 MOON + 2 EARTH you have, 2 FEAR and you may Push 1 TOWN from target land.",
           },
           {
             elements: { moon: 5, fire: 6, earth: 6 },
             description:
-              "Pay 7 Energy. In every land in the game: X Damage, where X is the number of Presence you have in and adjacent to that land.",
+              "Pay 7 Energy. In every land in the game: X Damage, where X is the number of PRESENCE you have in and adjacent to that land.",
           },
         ],
       },
@@ -1046,23 +1046,23 @@ export const spirits = {
     innatePowers: [
       {
         name: "Darkness Swallows the Unwary",
-        speed: "Fast",
-        range: "Sacred Range 1",
+        speed: "FAST",
+        range: "SACRED SITE RANGE 1",
         target: "ANY",
         thresholds: [
           {
             elements: { moon: 2, fire: 1 },
-            description: "Gather 1 Explorer.",
+            description: "Gather 1 EXPLORER.",
           },
           {
             elements: { moon: 3, fire: 2 },
             description:
-              "Destroy up to 2 Explorer. 1 Fear per Explorer destroyed.",
+              "Destroy up to 2 EXPLORER. 1 FEAR per EXPLORER destroyed.",
           },
           {
             elements: { moon: 4, fire: 3, air: 2 },
             description:
-              "3 Damage. 1 Fear per Invader destroyed by this Damage.",
+              "3 Damage. 1 FEAR per Invader destroyed by this Damage.",
           },
         ],
       },
@@ -1074,29 +1074,29 @@ export const spirits = {
     innatePowers: [
       {
         name: "RANGING HUNT",
-        speed: "Fast",
-        range: "Range 1",
-        target: "Land without Blight",
+        speed: "FAST",
+        range: "RANGE 1",
+        target: "LAND WITHOUT BLIGHT",
         thresholds: [
           {
             elements: { animal: 2 },
-            description: "You may Gather 1 Beasts.",
+            description: "You may Gather 1 BEASTS.",
           },
           {
             elements: { plant: 2, animal: 3 },
-            description: "1 Damage per Beasts.",
+            description: "1 Damage per BEASTS.",
           },
           {
             elements: { animal: 2 },
-            description: "You may Push up to 2 Beasts.",
+            description: "You may Push up to 2 BEASTS.",
           },
         ],
       },
       {
         name: "FRENZIED ASSAULT",
-        speed: "Slow",
-        range: "Range 1",
-        target: "Beasts",
+        speed: "SLOW",
+        range: "RANGE 1",
+        target: "BEASTS",
         thresholds: [
           {
             elements: {
@@ -1104,7 +1104,7 @@ export const spirits = {
               fire: 1,
               animal: 4,
             },
-            description: "1 Fear and 2 Damage. Remove 1 Beasts.",
+            description: "1 FEAR and 2 Damage. Remove 1 BEASTS.",
           },
           {
             elements: {
@@ -1112,7 +1112,7 @@ export const spirits = {
               fire: 2,
               animal: 5,
             },
-            description: "+1 Fear and +1 Damage.",
+            description: "+1 FEAR and +1 Damage.",
           },
         ],
       },
@@ -1124,9 +1124,9 @@ export const spirits = {
     innatePowers: [
       {
         name: "Learn the Invaders' Tactics",
-        speed: "Fast",
-        range: "Range 1",
-        target: "INVADERS",
+        speed: "FAST",
+        range: "RANGE 1",
+        target: "Invaders",
         thresholds: [
           {
             elements: {
@@ -1154,8 +1154,8 @@ export const spirits = {
       },
       {
         name: "Observe the Ever-Changing World",
-        speed: "Fast",
-        range: "Range 1",
+        speed: "FAST",
+        range: "RANGE 1",
         target: "ANY",
         thresholds: [
           {
@@ -1184,8 +1184,8 @@ export const spirits = {
     innatePowers: [
       {
         name: "Suffocating Shroud",
-        speed: "Slow",
-        range: "Range 0",
+        speed: "SLOW",
+        range: "RANGE 0",
         target: "ANY",
         thresholds: [
           {
@@ -1203,7 +1203,7 @@ export const spirits = {
               water: 2,
             },
             description:
-              "For each adjacent land with your Presence, 1 Damage to a different Invader.",
+              "For each adjacent land with your PRESENCE, 1 Damage to a different Invader.",
           },
           {
             elements: {
@@ -1225,8 +1225,8 @@ export const spirits = {
       },
       {
         name: "Lost in the Swirling Haze",
-        speed: "Slow",
-        range: "Range 0",
+        speed: "SLOW",
+        range: "RANGE 0",
         target: "ANY",
         thresholds: [
           {
@@ -1234,21 +1234,21 @@ export const spirits = {
               air: 1,
               water: 2,
             },
-            description: "Push up to 1 Dahan.",
+            description: "Push up to 1 DAHAN.",
           },
           {
             elements: {
               air: 2,
               water: 3,
             },
-            description: "Push up to 2 Explorer/Dahan.",
+            description: "Push up to 2 EXPLORER/DAHAN.",
           },
           {
             elements: {
               air: 3,
               water: 4,
             },
-            description: "Push up to 2 Explorer/Dahan.",
+            description: "Push up to 2 EXPLORER/DAHAN.",
           },
         ],
       },
@@ -1260,15 +1260,15 @@ export const spirits = {
     innatePowers: [
       {
         name: "Air Moves, Earth Endures",
-        speed: "Fast",
-        range: "Range 1",
+        speed: "FAST",
+        range: "RANGE 1",
         target: "ANY",
         thresholds: [
           {
             elements: {
               air: 3,
             },
-            description: "Push up to 2 Explorer or 1 Town.",
+            description: "Push up to 2 EXPLORER or 1 TOWN.",
           },
           {
             elements: {
@@ -1280,28 +1280,28 @@ export const spirits = {
       },
       {
         name: "Fire Burns, Water Soothes",
-        speed: "Slow",
-        range: "Sacred Range 1",
+        speed: "SLOW",
+        range: "SACRED SITE RANGE 1",
         target: "ANY",
         thresholds: [
           {
             elements: {
               fire: 3,
             },
-            description: "1 Fear. 2 Damage.",
+            description: "1 FEAR. 2 Damage.",
           },
           {
             elements: {
               water: 3,
             },
-            description: "Remove 1 Blight.",
+            description: "Remove 1 BLIGHT.",
           },
         ],
       },
       {
         name: "Wood Seeks Growth, Humans Seek Freedom",
-        speed: "Slow",
-        range: "Range 2",
+        speed: "SLOW",
+        range: "RANGE 2",
         target: "ANY",
         thresholds: [
           {
@@ -1309,40 +1309,40 @@ export const spirits = {
               plant: 3,
             },
             description:
-              "Choose a Spirit with Presence in target land. They gain a Power Card.",
+              "Choose a Spirit with PRESENCE in target land. They gain a Power Card.",
           },
           {
             elements: {
               animal: 3,
             },
-            description: "1 Damage per Dahan OR Push up to 3 Dahan.",
+            description: "1 Damage per DAHAN OR Push up to 3 DAHAN.",
           },
         ],
       },
       {
         name: "Sidereal Guidance",
-        speed: "Slow",
-        range: "Range 1",
+        speed: "SLOW",
+        range: "RANGE 1",
         target: "ANY",
         thresholds: [
           {
             elements: {
               moon: 2,
             },
-            description: "Gather up to 1 Explorer/Dahan.",
+            description: "Gather up to 1 EXPLORER/DAHAN.",
           },
           {
             elements: {
               moon: 3,
             },
-            description: "Instead, Gather up to 3 Explorer.",
+            description: "Instead, Gather up to 3 EXPLORER.",
           },
         ],
       },
       {
         name: "Stars Blaze in the Daytime Sky",
-        speed: "Slow",
-        range: "None",
+        speed: "SLOW",
+        range: "NONE",
         target: "YOURSELF",
         thresholds: [
           {
@@ -1350,7 +1350,7 @@ export const spirits = {
               sun: 4,
             },
             description:
-              "3 Fear. Gain 1 Energy. Reclaim up to 1 Power Card from play or your discard pile.",
+              "3 FEAR. Gain 1 Energy. Reclaim up to 1 Power Card from play or your discard pile.",
           },
         ],
       },
@@ -1362,8 +1362,8 @@ export const spirits = {
     innatePowers: [
       {
         name: "Hold the Island Fast with a Bulwark of Will",
-        speed: "Fast",
-        range: "None",
+        speed: "FAST",
+        range: "NONE",
         target: "YOURSELF",
         thresholds: [
           {
@@ -1371,7 +1371,7 @@ export const spirits = {
               earth: 2,
             },
             description:
-              "When Blight is added to one of your lands, you may pay 2 Energy per Blight to take it from the box instead of the blight Card. (Handle any cascade separately.)",
+              "When BLIGHT is added to one of your lands, you may pay 2 Energy per BLIGHT to take it from the box instead of the blight Card. (Handle any cascade separately.)",
           },
           {
             elements: {
@@ -1385,14 +1385,14 @@ export const spirits = {
               plant: 1,
             },
             description:
-              'When an Event or blight card directly destroys Presence (yours or others\'), you may prevent any number of Presence from being destroyed by paying 1 Energy each. ("Directly" means "not by adding Blight".)',
+              'When an Event or blight card directly destroys PRESENCE (yours or others\'), you may prevent any number of PRESENCE from being destroyed by paying 1 Energy each. ("Directly" means "not by adding BLIGHT".)',
           },
         ],
       },
       {
         name: "Let Them Break Themselves Against the Stone",
-        speed: "Fast",
-        range: "Range 0",
+        speed: "FAST",
+        range: "RANGE 0",
         target: "ANY",
         thresholds: [
           {
@@ -1428,8 +1428,8 @@ export const spirits = {
     innatePowers: [
       {
         name: "Violent Windstorms",
-        speed: "Slow",
-        range: "Range 1",
+        speed: "SLOW",
+        range: "RANGE 1",
         target: "ANY",
         thresholds: [
           {
@@ -1437,14 +1437,14 @@ export const spirits = {
               sun: 1,
               air: 2,
             },
-            description: "Push up to 1 Explorer.",
+            description: "Push up to 1 EXPLORER.",
           },
           {
             elements: {
               sun: 2,
               air: 3,
             },
-            description: "1 Fear. Push up to 2 Explorer/Town.",
+            description: "1 FEAR. Push up to 2 EXPLORER/TOWN.",
           },
           {
             elements: {
@@ -1473,8 +1473,8 @@ export const spirits = {
     innatePowers: [
       {
         name: "Shelter Under Towering Branches",
-        speed: "Slow",
-        range: "Sacred Range 0",
+        speed: "SLOW",
+        range: "SACRED SITE RANGE 0",
         target: "ANY",
         thresholds: [
           {
@@ -1482,7 +1482,7 @@ export const spirits = {
               sun: 1,
               plant: 1,
             },
-            description: "Gather up to 1 Dahan.",
+            description: "Gather up to 1 DAHAN.",
           },
           {
             elements: {
@@ -1490,7 +1490,7 @@ export const spirits = {
               earth: 1,
               plant: 2,
             },
-            description: "Gather up to 1 Explorer.",
+            description: "Gather up to 1 EXPLORER.",
           },
           {
             elements: {
@@ -1498,7 +1498,7 @@ export const spirits = {
               earth: 1,
               plant: 3,
             },
-            description: "Gather up to 1 Town.",
+            description: "Gather up to 1 TOWN.",
           },
           {
             elements: {
@@ -1506,15 +1506,15 @@ export const spirits = {
               earth: 2,
               plant: 4,
             },
-            description: "Gather up to 1 City.",
+            description: "Gather up to 1 CITY.",
           },
         ],
       },
       {
         name: "Revoke Sanctuary and Cast Out",
-        speed: "Slow",
-        range: "Sacred Range 0",
-        target: "Towering Roots of the Jungle + INVADERS",
+        speed: "SLOW",
+        range: "SACRED SITE RANGE 0",
+        target: "TOWERING ROOTS OF THE JUNGLE + Invaders",
         thresholds: [
           {
             elements: {
@@ -1522,7 +1522,7 @@ export const spirits = {
               moon: 1,
               plant: 2,
             },
-            description: "1 Fear. Remove 1 Explorer/Town.",
+            description: "1 FEAR. Remove 1 EXPLORER/TOWN.",
           },
           {
             elements: {
@@ -1530,7 +1530,7 @@ export const spirits = {
               moon: 1,
               plant: 3,
             },
-            description: "1 Fear. Remove 1 Explorer/Town.",
+            description: "1 FEAR. Remove 1 EXPLORER/TOWN.",
           },
           {
             elements: {
@@ -1538,7 +1538,7 @@ export const spirits = {
               moon: 2,
               plant: 4,
             },
-            description: "1 Fear. Remove 1 Invader.",
+            description: "1 FEAR. Remove 1 Invader.",
           },
         ],
       },
@@ -1550,38 +1550,38 @@ export const spirits = {
     innatePowers: [
       {
         name: "Gather the Warriors",
-        speed: "Slow",
-        range: "Range 1",
+        speed: "SLOW",
+        range: "RANGE 1",
         target: "ANY",
         thresholds: [
           {
             elements: { air: 4 },
-            description: "This power may be Fast",
+            description: "This power may be FAST",
           },
           {
             elements: { animal: 1 },
             description:
-              "Gather up to 1 Dahan per Air you have. Push up to 1 Dahan per Sun you have.",
+              "Gather up to 1 DAHAN per AIR you have. Push up to 1 DAHAN per SUN you have.",
           },
         ],
       },
       {
         name: "Lead the Furious Assault",
-        speed: "Slow",
-        range: "Range 0",
+        speed: "SLOW",
+        range: "RANGE 0",
         target: "ANY",
         thresholds: [
           {
             elements: { air: 4 },
-            description: "This power may be Fast",
+            description: "This power may be FAST",
           },
           {
             elements: { sun: 2, fire: 1 },
-            description: "Destroy 1 Town for every 2 Dahan in target land.",
+            description: "Destroy 1 TOWN for every 2 DAHAN in target land.",
           },
           {
             elements: { sun: 4, fire: 3 },
-            description: "Destroy 1 City for every 3 Dahan in target land.",
+            description: "Destroy 1 CITY for every 3 DAHAN in target land.",
           },
         ],
       },
@@ -1593,16 +1593,16 @@ export const spirits = {
     innatePowers: [
       {
         name: "Epidemics Run Rampant",
-        speed: "Fast",
-        range: "Range 1",
-        target: "Disease",
+        speed: "FAST",
+        range: "RANGE 1",
+        target: "DISEASE",
         thresholds: [
           {
             elements: {
               fire: 1,
               animal: 3,
             },
-            description: "1 Damage per Disease.",
+            description: "1 Damage per DISEASE.",
           },
           {
             elements: {
@@ -1610,7 +1610,7 @@ export const spirits = {
               fire: 2,
               animal: 4,
             },
-            description: "+1 Damage per Disease.",
+            description: "+1 Damage per DISEASE.",
           },
           {
             elements: {
@@ -1619,23 +1619,23 @@ export const spirits = {
               animal: 5,
             },
             description:
-              "+1 Damage per Disease. 1 Fear per Disease (max 5). Remove 1 Disease.",
+              "+1 Damage per DISEASE. 1 FEAR per DISEASE (max 5). Remove 1 DISEASE.",
           },
         ],
         special:
-          "This Power's Damage is dealt (separately) to both Invaders and Dahan",
+          "This Power's Damage is dealt (separately) to both Invaders and DAHAN",
       },
       {
         name: "Savage Revenge",
-        speed: "Slow",
-        range: "Range 0",
-        target: "Town/City",
+        speed: "SLOW",
+        range: "RANGE 0",
+        target: "TOWN/CITY",
         thresholds: [
           {
             elements: {
               air: 3,
             },
-            description: "This Power has Plus1 Range.",
+            description: "This Power has PLUS 1 RANGE.",
           },
           {
             elements: {
@@ -1669,24 +1669,24 @@ export const spirits = {
   innatePowers: [
     {
       name: "EXPLOSIVE ERUPTION",
-      speed: "Fast",
-      range: "Range 0",
+      speed: "FAST",
+      range: "RANGE 0",
       target: "ANY",
-      special: "Destroy X (1 or more) of your Presence in target land; DestroyedPresence checks how many you destroyed. This Power does Damage (separately and equally) to both Invaders and Dahan. Ranges below can't be increased.",
+      special: "Destroy X (1 or more) of your PRESENCE in target land; DESTROYED PRESENCE checks how many you destroyed. This Power does Damage (separately and equally) to both Invaders and DAHAN. Ranges below can't be increased.",
       thresholds: [
         {
           elements: {
             fire: 2,
             earth: 2,
           },
-          description: "2 DestroyedPresence  In one land within Range 1, X Damage.",
+          description: "2 DESTROYED PRESENCE  In one land within RANGE 1, X Damage.",
         },
         {
           elements: {
             fire: 3,
             earth: 3,
           },
-          description: "4 DestroyedPresence  Generate X Fear.",
+          description: "4 DESTROYED PRESENCE  Generate X FEAR.",
         },
         {
           elements: {
@@ -1695,7 +1695,7 @@ export const spirits = {
             earth: 4,
           },
           description:
-            "6 DestroyedPresence  In each land within Range 1, 4 Damage. Add 1 Blight to target land; doing so does not Destroy your Presence.",
+            "6 DESTROYED PRESENCE  In each land within RANGE 1, 4 Damage. Add 1 BLIGHT to target land; doing so does not Destroy your PRESENCE.",
         },
         {
           elements: {
@@ -1704,21 +1704,21 @@ export const spirits = {
             earth: 5,
           },
           description:
-            "10 DestroyedPresence  In each land within Range 2, +4 Damage. In each land adjacent to the target, add 1 Blight if it doesn't have any.",
+            "10 DESTROYED PRESENCE  In each land within RANGE 2, +4 Damage. In each land adjacent to the target, add 1 BLIGHT if it doesn't have any.",
         },
       ],
     },
     {
       name: "POWERED BY THE FURNACE OF THE EARTH",
-      speed: "Slow",
-      range: "Range 0",
+      speed: "SLOW",
+      range: "RANGE 0",
       target: "ANY",
       thresholds: [
         {
           elements: {
             earth: 3,
           },
-          description: "Add 1 of your destroyed Presence.",
+          description: "Add 1 of your destroyed PRESENCE.",
         },
         {
           elements: {
@@ -1732,14 +1732,14 @@ export const spirits = {
             earth: 4,
             fire: 4,
           },
-          description: "Move up to 2 of your Presence from other lands to target land.",
+          description: "Move up to 2 of your PRESENCE from other lands to target land.",
         },
         {
           elements: {
             fire: 5,
           },
           description:
-            "Return up to 2 of your destroyed Presence to your Presence tracks.",
+            "Return up to 2 of your destroyed PRESENCE to your PRESENCE tracks.",
         },
       ],
     },
@@ -1752,9 +1752,9 @@ export const spirits = {
     innatePowers: [
       {
         name: "Gift of Strength",
-        speed: "Fast",
-        range: "None",
-        target: "ANY Player",
+        speed: "FAST",
+        range: "NONE",
+        target: "ANY PLAYER",
         thresholds: [
           {
             elements: { sun: 1, earth: 2, plant: 2 },
@@ -1779,27 +1779,27 @@ export const spirits = {
     innatePowers: [
       {
         name: "Inscrutable Journeying",
-        speed: "Fast",
-        range: "None",
+        speed: "FAST",
+        range: "NONE",
         target: "YOURSELF",
         thresholds: [
           {
             elements: {
               air: 1,
             },
-            description: "You may Push Wandering Voice Keens Delirium.",
+            description: "You may Push WANDERING VOICE KEENS DELIRIUM.",
           },
           {
             elements: {
               air: 3,
             },
-            description: "You may Push Wandering Voice Keens Delirium.",
+            description: "You may Push WANDERING VOICE KEENS DELIRIUM.",
           },
           {
             elements: {
               air: 5,
             },
-            description: "You may Push Wandering Voice Keens Delirium.",
+            description: "You may Push WANDERING VOICE KEENS DELIRIUM.",
           },
           {
             elements: {
@@ -1808,24 +1808,24 @@ export const spirits = {
               air: 4,
               plant: 1,
             },
-            description: "Empower Wandering Voice Keens Delirium.",
+            description: "Empower WANDERING VOICE KEENS DELIRIUM.",
           },
         ],
         special:
-          "(Each time you move Wandering Voice Keens Delirium into a land with Invaders, Spread Tumult and Delusion adds 1 Strife.)",
+          "(Each time you move WANDERING VOICE KEENS DELIRIUM into a land with Invaders, Spread Tumult and Delusion adds 1 STRIFE.)",
       },
       {
         name: "Mind-Shattering Song",
-        speed: "Slow",
-        range: "Sacred Range 1",
-        target: "Strife",
+        speed: "SLOW",
+        range: "SACRED SITE RANGE 1",
+        target: "STRIFE",
         thresholds: [
           {
             elements: {
               moon: 1,
               air: 2,
             },
-            description: "1 Fear per Moon you have.",
+            description: "1 FEAR per MOON you have.",
           },
           {
             elements: {
@@ -1833,7 +1833,7 @@ export const spirits = {
               air: 2,
             },
             description:
-              "1 Damage per Sun you have, to Invaders with Strife only.",
+              "1 Damage per SUN you have, to Invaders with STRIFE only.",
           },
           {
             elements: {
@@ -1842,7 +1842,7 @@ export const spirits = {
               air: 4,
             },
             description:
-              "For each Sun Moon pair you have, Destroy 1 Invader with Strife.",
+              "For each SUN MOON pair you have, Destroy 1 Invader with STRIFE.",
           },
         ],
       },
@@ -1854,22 +1854,22 @@ export const spirits = {
     innatePowers: [
       {
         name: "Swirl and Spill",
-        speed: "Slow",
-        range: "Range 1",
+        speed: "SLOW",
+        range: "RANGE 1",
         target: "ANY",
         thresholds: [
           {
             elements: {
               water: 2,
             },
-            description: "Push up to 2 Explorer/Dahan/Blight.",
+            description: "Push up to 2 EXPLORER/DAHAN/BLIGHT.",
           },
           {
             elements: {
               water: 3,
               animal: 1,
             },
-            description: "1 Fear. Push up to 2 Town/Presence/Beasts.",
+            description: "1 FEAR. Push up to 2 TOWN/PRESENCE/BEASTS.",
           },
           {
             elements: {
@@ -1878,28 +1878,28 @@ export const spirits = {
               animal: 2,
             },
             description:
-              "In one land pushed into, Downgrade all Town and all City.",
+              "In one land pushed into, Downgrade all TOWN and all CITY.",
           },
         ],
       },
       {
         name: "Sanguinary Taint",
-        speed: "Slow",
-        range: "Range 1",
+        speed: "SLOW",
+        range: "RANGE 1",
         target: "ANY",
         thresholds: [
           {
             elements: {
               animal: 2,
             },
-            description: "1 Fear. 1 Damage. Push 1 Dahan.",
+            description: "1 FEAR. 1 Damage. Push 1 DAHAN.",
           },
           {
             elements: {
               water: 1,
               animal: 3,
             },
-            description: "1 Damage. Add 1 Beasts.",
+            description: "1 Damage. Add 1 BEASTS.",
           },
           {
             elements: {
@@ -1907,7 +1907,7 @@ export const spirits = {
               water: 2,
               animal: 5,
             },
-            description: "1 Fear. 4 Damage. Add 1 Disease.",
+            description: "1 FEAR. 4 Damage. Add 1 DISEASE.",
           },
         ],
       },

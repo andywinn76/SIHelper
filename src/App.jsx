@@ -51,8 +51,6 @@ function App() {
   const isTouchDevice =
     "ontouchstart" in window || navigator.maxTouchPoints > 0;
 
-  const [isDragging, setIsDragging] = useState(false);
-
   const [sectionOrder, setSectionOrder] = useState([
     "instructions",
     "innates",
@@ -140,18 +138,6 @@ function App() {
       </CollapsibleSection>
     ),
   };
-
-  // useEffect(() => {
-  //   if (isDragging) {
-  //     document.body.style.overscrollBehavior = "none";
-  //     document.body.style.touchAction = "none";
-  //     document.body.style.overflow = "hidden";
-  //   } else {
-  //     document.body.style.overscrollBehavior = "";
-  //     document.body.style.touchAction = "";
-  //     document.body.style.overflow = "";
-  //   }
-  // }, [isDragging]);
 
   return (
     <SpiritProvider>

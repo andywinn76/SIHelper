@@ -78,7 +78,7 @@ function ElementSelector({ isTouchDevice }) {
   return (
     <section>
       {/* Grid container for elements */}
-      <div className="grid grid-cols-4 gap-2 gap-y-3 my-8 mx-4 sm:mx-8">
+      <div className="grid grid-cols-4 gap-2 gap-y-3 mt-4 mb-6 mx-4 sm:mx-8">
         {allElements.map((element) => (
           <div
             key={element}
@@ -86,7 +86,7 @@ function ElementSelector({ isTouchDevice }) {
           >
             <img
               className="w-10 h-10"
-              src={`/SIHelper/images/elements/${element}.png`}
+              src={`${BASE_URL}/images/icons/${element}.png`}
               alt={element}
               onClick={() => handleAddIcon(element)}
               onContextMenu={(e) => {

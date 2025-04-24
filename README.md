@@ -61,8 +61,9 @@ Then, open http://localhost:5173/SIHelper/ in your browser.
 - Add collapsible special rules for each spirit.
 - Add spirit sorting by complexity/difficulty.
 - Track which spirits have been played.
-- Add a swipeable interface to allow playing multiple spirits.
+- Add a swipe-able interface to allow playing multiple spirits.
 - COMPLETE - Add ability to re-order sections to allow user customization.
+- COMPLETE - Refactor icon keyword names for easier readability and fallback protection if icon load fails.
 
 ## 🤝 Contributing
 Feel free to fork the repository and submit a pull request if you'd like to contribute!

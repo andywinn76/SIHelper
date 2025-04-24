@@ -54,14 +54,14 @@ function Powers() {
   const powers = spiritData.innatePowers;
 
   return (    
-    <div className="powers-list">
+    <div>
       <div className="power-card">
         {powers.map((power, powerIndex) => (
           <div key={power.name || powerIndex}>
             <h3 className="power-title uppercase tracking-wider">
               {power.name}
             </h3>
-            <table className="power-meta-table mb-2">
+            <table className="power-meta-table">
               <thead>
                 <tr>
                   <th className="font-noto">SPEED</th>
@@ -73,19 +73,19 @@ function Powers() {
                 <tr>
                   <td>{renderIcons(power.speed)}</td>
                   <td>{renderIcons(power.range)}</td>
-                  <td className="target-text font-mouse tracking-wider uppercase">
+                  <td className=" target-text font-mouse text-2xl tracking-wider">
                     {renderIcons(power.target)}
                   </td>
                 </tr>
               </tbody>
             </table>
             {power.special && (
-              <p className="icon-sizing px-3 pb-2 font-lato text-gray-800 border-b-2 border-blue-100 border-opacity-10">
+              <p className="icon-sizing px-3 pb-1 font-lato text-gray-800 border-b-2 border-blue-100 border-opacity-10">
                 {renderIcons(power.special)}
               </p>
             )}
 
-            <table className="threshold-table w-full mt-2 text-left mb-4">
+            <table className="threshold-table w-full text-left">
               <tbody>
                 {power.thresholds.map((threshold, i) => {
                   const unlocked = checkThreshold(threshold.elements, power.name);

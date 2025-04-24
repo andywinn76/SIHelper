@@ -104,12 +104,13 @@ button.clear:disabled {
 
 /* Power tier custom css */
 .locked {
-  opacity: 0.5;
-  filter: grayscale(20%);
+  opacity: 0.4;
+  /* filter: grayscale(10%); */
+  background: rgba(255, 0, 0, 0.096); /* Use rgba for subtle background color */
 }
 
 .unlocked {
-  opacity: 1;
+  background: rgba(30, 211, 126, 0.164); /* Use rgba for subtle background color */
 }
 
 select {
@@ -133,21 +134,17 @@ img.inline-block {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.powers-list {
-  /* margin-top: 20px; */
-}
-
 .power-card {
   border: 1px solid #ccc;
-  padding: 10px;
-  margin-bottom: 10px;
+  /* padding: 10px; */
+  padding: 0 .7rem .6rem .7rem;
   border-radius: 5px;
   background-color: #f9f9f9;
 }
 .power-title {
   font-size: 1.25rem;
   font-weight: bold;
-  margin-bottom: 0.3rem;
+  margin: 0.8rem 0 0.3rem 0;
   color: #333;
   font-family: 'Mouse Memoirs', sans-serif;
 }
@@ -157,7 +154,7 @@ img.inline-block {
   border-collapse: collapse;
   background-color: #fdf5e6; /* Light parchment/beige */
   border: 1px solid #aaa;
-  margin-bottom: 0.5rem;
+  /* margin-bottom: 0.5rem; */
 }
 
 .power-meta-table th {
@@ -176,8 +173,10 @@ img.inline-block {
 }
 
 .target-text {
-  font-weight: bold;
-  font-size: larger;
+  /* font-weight: bold; */
+  /* font-family: 'Mouse Memoirs', sans-serif; */
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .meta {
@@ -198,6 +197,7 @@ img.inline-block {
   gap: 0px;
   padding: 5px;
   border-bottom: 2px solid rgba(128, 128, 128, 0.3);
+  border-radius: 4px;
 }
 
 .threshold-icons {
