@@ -52,6 +52,7 @@ export function renderIcons(text) {
     SLOW: "icons/slow.png",
     PRESENCE: "icons/presence.png",
     "DESTROYED PRESENCE": "icons/DestroyedPresence.png",
+    ESCALATION: "icons/escalation.png",
     "SACRED SITE": {src: "icons/sacred-site.png", className: "inline-block w-auto h-6 mx-0.5"},
     PLAYER: "icons/player-spirit.png",
     "POWER CARD": "icons/PowerCard.svg",
@@ -99,7 +100,7 @@ export function renderElementIcons(elements) {
         src={
           element === "cardPlays"
             ? `${BASE_URL}images/icons/PowerCard.svg`
-            : `${BASE_URL}images/elements/${element}.png`
+            : `${BASE_URL}images/icons/${element}.png`
         }
         alt={element}
         className="inline-block w-6 h-6 mx-0.5"

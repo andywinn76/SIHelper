@@ -18,6 +18,7 @@ import { CSS } from "@dnd-kit/utilities";
 
 import { SpiritProvider } from "./assets/contexts/SpiritContext";
 import { ElementProvider } from "./assets/contexts/ElementContext";
+import { FaRegQuestionCircle } from "react-icons/fa";
 import ElementSelector from "./assets/components/ElementSelector";
 import GlassBG from "./assets/components/GlassBG";
 import Wrapper from "./assets/components/Wrapper";
@@ -26,8 +27,8 @@ import CollapsibleSection from "./assets/components/CollapsibleSection";
 import Instructions from "./assets/components/Instructions";
 import Powers from "./assets/components/Powers";
 import EnergyTracker from "./assets/components/EnergyTracker";
-import { FaRegQuestionCircle } from "react-icons/fa";
 import SpiritSelector from "./assets/components/SpiritSelector";
+import Glossary from "./assets/components/Glossary";
 
 function SortableItem({ id, children }) {
   const { attributes, listeners, setNodeRef, transform, transition } =
@@ -56,6 +57,7 @@ function App() {
     "innates",
     "elements",
     "energy",
+    "glossary",
   ]);
 
   const sensors = useSensors(
@@ -80,9 +82,25 @@ function App() {
   };
 
   // Load saved order from localStorage (on mount)
+  const STORAGE_VERSION = 1; // <--- Start with version 1
+
   useEffect(() => {
+    const savedVersion = localStorage.getItem("storageVersion");
     const savedOrder = localStorage.getItem("sectionOrder");
-    if (savedOrder) {
+
+    if (parseInt(savedVersion) !== STORAGE_VERSION) {
+      // Version mismatch or missing version -> Reset
+      console.log("Storage version mismatch. Clearing localStorage...");
+      localStorage.clear();
+      localStorage.setItem("storageVersion", STORAGE_VERSION);
+      setSectionOrder([
+        "instructions",
+        "innates",
+        "elements",
+        "energy",
+        "glossary",
+      ]);
+    } else if (savedOrder) {
       try {
         setSectionOrder(JSON.parse(savedOrder));
       } catch (e) {
@@ -135,6 +153,16 @@ function App() {
         dragListeners={dragListeners}
       >
         <EnergyTracker />
+      </CollapsibleSection>
+    ),
+    glossary: (dragListeners) => (
+      <CollapsibleSection
+        key="glossary"
+        title="Glossary"
+        collapsed={true}
+        dragListeners={dragListeners}
+      >
+        <Glossary />
       </CollapsibleSection>
     ),
   };

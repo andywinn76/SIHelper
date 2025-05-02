@@ -88,7 +88,7 @@ function SelectedElements({ children, sectionName, selectedIcons, setSelectedIco
           <div key={element} className="element-row" onClick={() => handleRemoveIcon(element)}>
             <img
               className="element-icon"
-              src={`/SIHelper/images/elements/${element}.png`}
+              src={`/SIHelper/images/icons/${element}.png`}
               alt={element}
             />
             <span className="element-count">x{count}</span>

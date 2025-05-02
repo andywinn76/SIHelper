@@ -219,3 +219,9 @@ img.inline-block {
   width: auto;
   max-width: 1.8rem;
 }
+
+
+.term-title > span > img {
+  max-width: 1.5rem;
+  border: 1px solid #960909;
+}

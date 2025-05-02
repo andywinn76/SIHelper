@@ -56,7 +56,7 @@ Then, open http://localhost:5173/SIHelper/ in your browser.
 ## 💡 Future Enhancements
 - COMPLETE - Add a thumbnail interface to select the spirit you're playing.
 - Add a win/loss tracker.
-- Add a game glossary tab for referencing keywords.
+- COMPLETE - Add a game glossary tab for referencing keywords.
 - Add Spirit aspect special innates and abilities.
 - Add collapsible special rules for each spirit.
 - Add spirit sorting by complexity/difficulty.
