@@ -55,15 +55,15 @@ Then, open http://localhost:5173/SIHelper/ in your browser.
 
 ## 💡 Future Enhancements
 - COMPLETE - Add a thumbnail interface to select the spirit you're playing.
-- Add a win/loss tracker.
+- COMPLETE - Add ability to re-order sections to allow user customization.
 - COMPLETE - Add a game glossary tab for referencing keywords.
+- COMPLETE - Refactor icon keyword names for easier readability and fallback protection if icon load fails.
+- COMPLETE - Add spirit sorting by complexity/difficulty.
+- Add a win/loss tracker.
 - Add Spirit aspect special innates and abilities.
 - Add collapsible special rules for each spirit.
-- Add spirit sorting by complexity/difficulty.
 - Track which spirits have been played.
 - Add a swipe-able interface to allow playing multiple spirits.
-- COMPLETE - Add ability to re-order sections to allow user customization.
-- COMPLETE - Refactor icon keyword names for easier readability and fallback protection if icon load fails.
 
 ## 🤝 Contributing
 Feel free to fork the repository and submit a pull request if you'd like to contribute!

@@ -1,6 +1,7 @@
 export const spirits = {
   "A Spread of Rampant Green": {
     thumbnail: "A_Spread_of_Rampant_Green.png",
+    complexity: "moderate",
     innatePowers: [
       {
         name: "CREEPERS TEAR INTO MORTAR",
@@ -47,6 +48,7 @@ export const spirits = {
 
   "Breath of Darkness Down Your Spine": {
     thumbnail: "Breath_of_Darkness_Down_Your_Spine.png",
+    complexity: "high",
     innatePowers: [
       {
         name: "LEAVE A TRAIL OF DEATHLY SILENCE",
@@ -103,6 +105,7 @@ export const spirits = {
 
   "Bringer of Dreams and Nightmares": {
     thumbnail: "Bringer_of_Dreams_and_Nightmares.png",
+    complexity: "high",
     innatePowers: [
       {
         name: "Spirits May Yet Dream",
@@ -147,6 +150,7 @@ export const spirits = {
 
   "Dances Up Earthquakes": {
     thumbnail: "Dances_Up_Earthquakes.png",
+    complexity: "very high",
     innatePowers: [
       {
         name: "Land Creaks with Tension",
@@ -204,6 +208,7 @@ export const spirits = {
 
   "Devouring Teeth Lurk Underfoot": {
     thumbnail: "Devouring_Teeth_Lurk_Underfoot.png",
+    complexity: "low",
     innatePowers: [
       {
         name: "DEATH APPROACHES FROM BENEATH THE SURFACE",
@@ -236,6 +241,7 @@ export const spirits = {
 
   "Downpour Drenches the World": {
     thumbnail: "Downpour_Drenches_the_World.png",
+    complexity: "high",
     innatePowers: [
       {
         name: "Rain and Mud Suppress Conflict",
@@ -287,6 +293,7 @@ export const spirits = {
 
   "Ember-Eyed Behemoth": {
     thumbnail: "Ember-Eyed_Behemoth.png",
+    complexity: "moderate",
     innatePowers: [
       {
         name: "Smash, Stomp, and Flatten",
@@ -319,6 +326,7 @@ export const spirits = {
 
   "Eyes Watch from the Trees": {
     thumbnail: "Eyes_Watch_from_the_Trees.png",
+    complexity: "low",
     innatePowers: [
       {
         name: "MISCHIEF AND SABOTAGE",
@@ -351,6 +359,7 @@ export const spirits = {
 
   "Fathomless Mud of the Swamp": {
     thumbnail: "Fathomless_Mud_of_the_Swamp.png",
+    complexity: "low",
     innatePowers: [
       {
         name: "Spreading and Dreadful Mire",
@@ -384,6 +393,7 @@ export const spirits = {
 
   "Finder of Paths Unseen": {
     thumbnail: "Finder_of_Paths_Unseen.png",
+    complexity: "very high",
     innatePowers: [
       {
         name: "LAY PATHS THEY CANNOT HELP BUT WALK",
@@ -432,6 +442,7 @@ export const spirits = {
 
   "Fractured Days Split the Sky": {
     thumbnail: "Fractured_Days_Split_the_Sky.png",
+    complexity: "very high",
     innatePowers: [
       {
         name: "SLIP THE FLOW OF TIME",
@@ -480,6 +491,7 @@ export const spirits = {
 
   "Grinning Trickster Stirs Up Trouble": {
     thumbnail: "Grinning_Trickster_Stirs_Up_Trouble.png",
+    complexity: "moderate",
     innatePowers: [
       {
         name: "Let's See What Happens",
@@ -489,12 +501,13 @@ export const spirits = {
         thresholds: [
           {
             elements: { moon: 1, fire: 1, air: 2 },
-            description: "Discard Minor Powers from the deck until you get one that targets a land. Use its text effects on target land immediately, ignoring normal Range/Targeting restrictions. All 'up to' instructions must be used at max. value. Treat all 'OR's as 'AND's. (It is not considered a card of yours or a card in play. Its effects are treated as performed by this Power, as if its text were copied here.)",
-
+            description:
+              "Discard Minor Powers from the deck until you get one that targets a land. Use its text effects on target land immediately, ignoring normal Range/Targeting restrictions. All 'up to' instructions must be used at max. value. Treat all 'OR's as 'AND's. (It is not considered a card of yours or a card in play. Its effects are treated as performed by this Power, as if its text were copied here.)",
           },
           {
             elements: { moon: 2, fire: 1, air: 2 },
-            description: "You may Forget a Power Card to gain the just-used Power Card (to hand) and 1 Energy.",
+            description:
+              "You may Forget a Power Card to gain the just-used Power Card (to hand) and 1 Energy.",
           },
         ],
       },
@@ -514,8 +527,7 @@ export const spirits = {
           },
           {
             elements: { sun: 3, fire: 3 },
-            description:
-              "1 Invader and 1 DAHAN deal Damage to each other.",
+            description: "1 Invader and 1 DAHAN deal Damage to each other.",
           },
           {
             elements: { animal: 3 },
@@ -529,6 +541,7 @@ export const spirits = {
 
   "Heart of the Wildfire": {
     thumbnail: "Heart_of_the_Wildfire.png",
+    complexity: "high",
     innatePowers: [
       {
         name: "Firestorm",
@@ -582,6 +595,7 @@ export const spirits = {
 
   "Hearth-Vigil": {
     thumbnail: "Hearth-Vigil.png",
+    complexity: "moderate",
     innatePowers: [
       {
         name: "Warn of Impending Conflict",
@@ -637,6 +651,7 @@ export const spirits = {
 
   "Keeper of the Forbidden Wilds": {
     thumbnail: "Keeper_of_the_Forbidden_Wilds.png",
+    complexity: "moderate",
     innatePowers: [
       {
         name: "Punish Those Who Trespass",
@@ -688,6 +703,7 @@ export const spirits = {
 
   "Lightning's Swift Strike": {
     thumbnail: "Lightnings_Swift_Strike.png",
+    complexity: "low",
     innatePowers: [
       {
         name: "Thundering Destruction",
@@ -718,6 +734,7 @@ export const spirits = {
 
   "Lure of the Deep Wilderness": {
     thumbnail: "Lure_of_the_Deep_Wilderness.png",
+    complexity: "moderate",
     innatePowers: [
       {
         name: "Forsake Society to Chase After Dreams",
@@ -777,6 +794,7 @@ export const spirits = {
 
   "Many Minds Move as One": {
     thumbnail: "Many_Minds_Move_as_One.png",
+    complexity: "moderate",
     innatePowers: [
       {
         name: "The Teeming Host Arrives",
@@ -828,6 +846,7 @@ export const spirits = {
 
   "Ocean’s Hungry Grasp": {
     thumbnail: "Oceans_Hungry_Grasp.png",
+    complexity: "high",
     innatePowers: [
       {
         name: "POUND SHIPS TO SPLINTERS",
@@ -874,6 +893,7 @@ export const spirits = {
 
   "Relentless Gaze of the Sun": {
     thumbnail: "Relentless_Gaze_of_the_Sun.png",
+    complexity: "high",
     innatePowers: [
       {
         name: "Scorching Convergence",
@@ -933,6 +953,7 @@ export const spirits = {
 
   "Rising Heat of Stone and Sand": {
     thumbnail: "Rising_Heat_of_Stone_and_Sand.png",
+    complexity: "low",
     innatePowers: [
       {
         name: "Scorch with Waves of Heat",
@@ -965,6 +986,7 @@ export const spirits = {
 
   "River Surges in Sunlight": {
     thumbnail: "River_Surges_in_Sunlight.png",
+    complexity: "low",
     innatePowers: [
       {
         name: "Massive Flooding",
@@ -977,7 +999,7 @@ export const spirits = {
             description: "Push one EXPLORER/TOWN.",
           },
           {
-            elements: { sun: 2, water: 3  },
+            elements: { sun: 2, water: 3 },
             description: "Instead, 2 Damage, push up to 3 EXPLORER/TOWN",
           },
           {
@@ -991,6 +1013,7 @@ export const spirits = {
 
   "Serpent Slumbering Beneath the Island": {
     thumbnail: "Serpent_Slumbering_Beneath_the_Island.png",
+    complexity: "high",
     innatePowers: [
       {
         name: "Serpent Wakes in Power",
@@ -1043,6 +1066,7 @@ export const spirits = {
 
   "Shadows Flicker Like Flame": {
     thumbnail: "Shadows_Flicker_Like_Flame.png",
+    complexity: "low",
     innatePowers: [
       {
         name: "Darkness Swallows the Unwary",
@@ -1071,6 +1095,7 @@ export const spirits = {
 
   "Sharp Fangs Behind the Leaves": {
     thumbnail: "Sharp_Fangs_Behind_the_Leaves.png",
+    complexity: "moderate",
     innatePowers: [
       {
         name: "RANGING HUNT",
@@ -1121,6 +1146,7 @@ export const spirits = {
 
   "Shifting Memory of Ages": {
     thumbnail: "Shifting_Memory_of_Ages.png",
+    complexity: "moderate",
     innatePowers: [
       {
         name: "Learn the Invaders' Tactics",
@@ -1181,6 +1207,7 @@ export const spirits = {
 
   "Shroud of Silent Mist": {
     thumbnail: "Shroud_of_Silent_Mist.png",
+    complexity: "high",
     innatePowers: [
       {
         name: "Suffocating Shroud",
@@ -1257,6 +1284,7 @@ export const spirits = {
 
   "Starlight Seeks Its Form": {
     thumbnail: "Starlight_Seeks_Its_Form.png",
+    complexity: "very high",
     innatePowers: [
       {
         name: "Air Moves, Earth Endures",
@@ -1359,6 +1387,7 @@ export const spirits = {
 
   "Stone's Unyielding Defiance": {
     thumbnail: "Stones_Unyielding_Defiance.png",
+    complexity: "moderate",
     innatePowers: [
       {
         name: "Hold the Island Fast with a Bulwark of Will",
@@ -1425,6 +1454,7 @@ export const spirits = {
 
   "Sun-Bright Whirlwind": {
     thumbnail: "Sun-Bright_Whirlwind.png",
+    complexity: "low",
     innatePowers: [
       {
         name: "Violent Windstorms",
@@ -1467,9 +1497,53 @@ export const spirits = {
       },
     ],
   },
+  Thunderspeaker: {
+    thumbnail: "Thunderspeaker.png",
+    complexity: "moderate",
+    innatePowers: [
+      {
+        name: "Gather the Warriors",
+        speed: "SLOW",
+        range: "RANGE 1",
+        target: "ANY",
+        thresholds: [
+          {
+            elements: { air: 4 },
+            description: "This power may be FAST",
+          },
+          {
+            elements: { animal: 1 },
+            description:
+              "Gather up to 1 DAHAN per AIR you have. Push up to 1 DAHAN per SUN you have.",
+          },
+        ],
+      },
+      {
+        name: "Lead the Furious Assault",
+        speed: "SLOW",
+        range: "RANGE 0",
+        target: "ANY",
+        thresholds: [
+          {
+            elements: { air: 4 },
+            description: "This power may be FAST",
+          },
+          {
+            elements: { sun: 2, fire: 1 },
+            description: "Destroy 1 TOWN for every 2 DAHAN in target land.",
+          },
+          {
+            elements: { sun: 4, fire: 3 },
+            description: "Destroy 1 CITY for every 3 DAHAN in target land.",
+          },
+        ],
+      },
+    ],
+  },
 
   "Towering Roots of the Jungle": {
     thumbnail: "Towering_Roots_of_the_Jungle.png",
+    complexity: "moderate",
     innatePowers: [
       {
         name: "Shelter Under Towering Branches",
@@ -1545,51 +1619,9 @@ export const spirits = {
     ],
   },
 
-  Thunderspeaker: {
-    thumbnail: "Thunderspeaker.png",
-    innatePowers: [
-      {
-        name: "Gather the Warriors",
-        speed: "SLOW",
-        range: "RANGE 1",
-        target: "ANY",
-        thresholds: [
-          {
-            elements: { air: 4 },
-            description: "This power may be FAST",
-          },
-          {
-            elements: { animal: 1 },
-            description:
-              "Gather up to 1 DAHAN per AIR you have. Push up to 1 DAHAN per SUN you have.",
-          },
-        ],
-      },
-      {
-        name: "Lead the Furious Assault",
-        speed: "SLOW",
-        range: "RANGE 0",
-        target: "ANY",
-        thresholds: [
-          {
-            elements: { air: 4 },
-            description: "This power may be FAST",
-          },
-          {
-            elements: { sun: 2, fire: 1 },
-            description: "Destroy 1 TOWN for every 2 DAHAN in target land.",
-          },
-          {
-            elements: { sun: 4, fire: 3 },
-            description: "Destroy 1 CITY for every 3 DAHAN in target land.",
-          },
-        ],
-      },
-    ],
-  },
-
   "Vengeance as a Burning Plague": {
     thumbnail: "Vengeance_as_a_Burning_Plague.png",
+    complexity: "high",
     innatePowers: [
       {
         name: "Epidemics Run Rampant",
@@ -1664,91 +1696,9 @@ export const spirits = {
     ],
   },
 
-  "Volcano Looming High": {
-  thumbnail: "Volcano_Looming_High.png",
-  innatePowers: [
-    {
-      name: "EXPLOSIVE ERUPTION",
-      speed: "FAST",
-      range: "RANGE 0",
-      target: "ANY",
-      special: "Destroy X (1 or more) of your PRESENCE in target land; DESTROYED PRESENCE checks how many you destroyed. This Power does Damage (separately and equally) to both Invaders and DAHAN. Ranges below can't be increased.",
-      thresholds: [
-        {
-          elements: {
-            fire: 2,
-            earth: 2,
-          },
-          description: "2 DESTROYED PRESENCE  In one land within RANGE 1, X Damage.",
-        },
-        {
-          elements: {
-            fire: 3,
-            earth: 3,
-          },
-          description: "4 DESTROYED PRESENCE  Generate X FEAR.",
-        },
-        {
-          elements: {
-            fire: 4,
-            air: 2,
-            earth: 4,
-          },
-          description:
-            "6 DESTROYED PRESENCE  In each land within RANGE 1, 4 Damage. Add 1 BLIGHT to target land; doing so does not Destroy your PRESENCE.",
-        },
-        {
-          elements: {
-            fire: 5,
-            air: 3,
-            earth: 5,
-          },
-          description:
-            "10 DESTROYED PRESENCE  In each land within RANGE 2, +4 Damage. In each land adjacent to the target, add 1 BLIGHT if it doesn't have any.",
-        },
-      ],
-    },
-    {
-      name: "POWERED BY THE FURNACE OF THE EARTH",
-      speed: "SLOW",
-      range: "RANGE 0",
-      target: "ANY",
-      thresholds: [
-        {
-          elements: {
-            earth: 3,
-          },
-          description: "Add 1 of your destroyed PRESENCE.",
-        },
-        {
-          elements: {
-            fire: 3,
-          },
-          cost: "Pay 2 Energy",
-          description: "Pay 2 energy. Gain a Power Card.",
-        },
-        {
-          elements: {
-            earth: 4,
-            fire: 4,
-          },
-          description: "Move up to 2 of your PRESENCE from other lands to target land.",
-        },
-        {
-          elements: {
-            fire: 5,
-          },
-          description:
-            "Return up to 2 of your destroyed PRESENCE to your PRESENCE tracks.",
-        },
-      ],
-    },
-  ],
-},
-
-
   "Vital Strength of the Earth": {
     thumbnail: "Vital_Strength_of_the_Earth.png",
+    complexity: "low",
     innatePowers: [
       {
         name: "Gift of Strength",
@@ -1774,8 +1724,95 @@ export const spirits = {
     ],
   },
 
+  "Volcano Looming High": {
+    thumbnail: "Volcano_Looming_High.png",
+    complexity: "moderate",
+    innatePowers: [
+      {
+        name: "EXPLOSIVE ERUPTION",
+        speed: "FAST",
+        range: "RANGE 0",
+        target: "ANY",
+        special:
+          "Destroy X (1 or more) of your PRESENCE in target land; DESTROYED PRESENCE checks how many you destroyed. This Power does Damage (separately and equally) to both Invaders and DAHAN. Ranges below can't be increased.",
+        thresholds: [
+          {
+            elements: {
+              fire: 2,
+              earth: 2,
+            },
+            description:
+              "2 DESTROYED PRESENCE  In one land within RANGE 1, X Damage.",
+          },
+          {
+            elements: {
+              fire: 3,
+              earth: 3,
+            },
+            description: "4 DESTROYED PRESENCE  Generate X FEAR.",
+          },
+          {
+            elements: {
+              fire: 4,
+              air: 2,
+              earth: 4,
+            },
+            description:
+              "6 DESTROYED PRESENCE  In each land within RANGE 1, 4 Damage. Add 1 BLIGHT to target land; doing so does not Destroy your PRESENCE.",
+          },
+          {
+            elements: {
+              fire: 5,
+              air: 3,
+              earth: 5,
+            },
+            description:
+              "10 DESTROYED PRESENCE  In each land within RANGE 2, +4 Damage. In each land adjacent to the target, add 1 BLIGHT if it doesn't have any.",
+          },
+        ],
+      },
+      {
+        name: "POWERED BY THE FURNACE OF THE EARTH",
+        speed: "SLOW",
+        range: "RANGE 0",
+        target: "ANY",
+        thresholds: [
+          {
+            elements: {
+              earth: 3,
+            },
+            description: "Add 1 of your destroyed PRESENCE.",
+          },
+          {
+            elements: {
+              fire: 3,
+            },
+            cost: "Pay 2 Energy",
+            description: "Pay 2 energy. Gain a Power Card.",
+          },
+          {
+            elements: {
+              earth: 4,
+              fire: 4,
+            },
+            description:
+              "Move up to 2 of your PRESENCE from other lands to target land.",
+          },
+          {
+            elements: {
+              fire: 5,
+            },
+            description:
+              "Return up to 2 of your destroyed PRESENCE to your PRESENCE tracks.",
+          },
+        ],
+      },
+    ],
+  },
+
   "Wandering Voice Keens Delirium": {
     thumbnail: "Wandering_Voice_Keens_Delirium.png",
+    complexity: "high",
     innatePowers: [
       {
         name: "Inscrutable Journeying",
@@ -1851,6 +1888,7 @@ export const spirits = {
 
   "Wounded Waters Bleeding": {
     thumbnail: "Wounded_Waters_Bleeding.png",
+    complexity: "high",
     innatePowers: [
       {
         name: "Swirl and Spill",

@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { spirits } from "../data/spirits.js";
 import { useSpirit } from "../contexts/SpiritContext";
-import ComplexityDropdown from "./ComplexityDropdown.jsx";
 
 const BASE_URL = import.meta.env.BASE_URL;
 
@@ -48,11 +47,29 @@ function SpiritSelector() {
 
       {showGrid && (
         <>
-          <ComplexityDropdown
-            complexityFilter={complexityFilter}
-            setComplexityFilter={setComplexityFilter}
-          />
-
+          <div className="w-full flex justify-center">
+            <select
+              value={complexityFilter}
+              onChange={(e) => setComplexityFilter(e.target.value)}
+              className="mb-3 px-2 py-1 rounded border text-sm bg-white/70 text-center"
+            >
+              <option className="bg-white" value="all">
+                All Complexities
+              </option>
+              <option className="bg-green-100" value="low">
+                Low
+              </option>
+              <option className="bg-yellow-100" value="moderate">
+                Moderate
+              </option>
+              <option className="bg-orange-100" value="high">
+                High
+              </option>
+              <option className="bg-red-100" value="very high">
+                Very High
+              </option>
+            </select>
+          </div>
           <div
             className="mt-2 lg:mx-4 lg:px-2 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-4 md:gap-y-3 lg:grid-cols-4 gap-1 
         md:gap-1 lg:gap-4 lg:gap-y-4 lg:gap-x-9"
