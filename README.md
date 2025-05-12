@@ -59,9 +59,11 @@ Then, open http://localhost:5173/SIHelper/ in your browser.
 - COMPLETE - Add a game glossary tab for referencing keywords.
 - COMPLETE - Refactor icon keyword names for easier readability and fallback protection if icon load fails.
 - COMPLETE - Add spirit sorting by complexity/difficulty.
+- COMPLETE - Add Spirit special abilities.
+- COMPLETE - Add collapsible special rules for each spirit.
+- COMPLETE - Add Spirit lore, setup, complexity and play style and power breakdown info
 - Add a win/loss tracker.
-- Add Spirit aspect special innates and abilities.
-- Add collapsible special rules for each spirit.
+- Add Spirit aspect special innates.
 - Track which spirits have been played.
 - Add a swipe-able interface to allow playing multiple spirits.
 

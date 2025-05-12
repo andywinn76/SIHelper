@@ -1,8 +1,8 @@
-import React from "react";
-
 const BASE_URL = import.meta.env.BASE_URL;
 
 export function renderIcons(text) {
+  console.log("TEXT RECEIVED BY renderIcons:", text);
+  if (!text) return null;
   const elements = ["AIR", "MOON", "FIRE", "SUN", "EARTH", "PLANT", "ANIMAL"];
   const ranges = [
     "RANGE 0",
@@ -25,6 +25,7 @@ export function renderIcons(text) {
     "BADLANDS",
     "DISEASE",
     "STRIFE",
+    "JUNGLE",
   ];
   const specialTerms = [
     "FAST",
@@ -35,6 +36,8 @@ export function renderIcons(text) {
     "POWER CARD",
     "PLAYER",
     "LAND WITHOUT BLIGHT",
+    "PLUS 1 ENERGY",
+    "ELEMENT",
   ];
   const spiritTerms = [
     "BREATH OF DARKNESS",
@@ -52,7 +55,7 @@ export function renderIcons(text) {
     ...spiritBoardIcons,
     ...specialTerms,
     ...spiritTerms,
-  ];
+  ].sort((a, b) => b.length - a.length);
   const regex = new RegExp(`(${keywords.join("|")})`, "g");
   const parts = text.split(regex);
 
@@ -191,7 +194,7 @@ export function renderIcons(text) {
       return (
         <img
           key={i}
-          src={`${BASE_URL}/images/elements/fire.png`}
+          src={`${BASE_URL}/images/icons/fire.png`}
           alt="Fire"
           className="inline-block w-auto h-5 mx-1"
         />
@@ -201,7 +204,7 @@ export function renderIcons(text) {
       return (
         <img
           key={i}
-          src={`${BASE_URL}/images/elements/air.png`}
+          src={`${BASE_URL}/images/icons/air.png`}
           alt="Air"
           className="inline-block w-auto h-5 mx-1"
         />
@@ -388,6 +391,36 @@ export function renderIcons(text) {
         />
       );
     }
+    // if (part === "PLUS1ENERGY") {
+    //   return (
+    //     <img
+    //       key={i}
+    //       src={`${BASE_URL}/images/icons/plus_1_energy.png`}
+    //       alt="plus 1 energy"
+    //       className="inline-block w-auto h-8 mx-1"
+    //     />
+    //   );
+    // }
+    if (part === "PLUS1ENERGY") {
+      return (
+        <img
+          key={i}
+          src={`${BASE_URL}/images/icons/plus_1_energy.png`}
+          alt="plus 1 energy"
+          className="inline-block w-auto h-8 mx-1"
+        />
+      );
+    }
+    if (part === "ELEMENT") {
+      return (
+        <img
+          key={i}
+          src={`${BASE_URL}/images/icons/element.png`}
+          alt="element"
+          className="inline-block w-auto h-8 mx-1"
+        />
+      );
+    }
     if (part === "WILDS") {
       return (
         <img
@@ -438,7 +471,7 @@ export function renderIcons(text) {
         />
       );
     }
-    if (part === "Jungle") {
+    if (part === "JUNGLE") {
       return (
         <img
           key={i}

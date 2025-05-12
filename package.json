@@ -1,7 +1,7 @@
 {
   "name": "spirit-island-helper",
   "private": true,
-  "version": "3.2.0",
+  "version": "4.0.0",
   "homepage": "https://andywinn76.github.io/SIHelper",
   "type": "module",
   "scripts": {

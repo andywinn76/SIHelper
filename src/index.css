@@ -225,3 +225,22 @@ img.inline-block {
   max-width: 1.5rem;
   border: 1px solid #960909;
 }
+
+.power-summary-chart {
+  /* background-color: #e2d3aa;
+  background-color: #fdf5e6; */
+  background-color: #f3e4c7;
+
+}
+
+.setup-bg {
+  /* background-color: #fdf5e6; */
+  /* background-color: #e2d3aa; */
+  background-color: #f9f9f9;
+}
+
+.soft-break {
+  display: block;
+  height: 0.1rem;
+  margin-top: -.1rem;
+}

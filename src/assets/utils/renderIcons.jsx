@@ -13,13 +13,14 @@ export function renderIcons(text) {
 
   const iconMap = normalizeIconMap({
     // Elements (SVG or PNG)
-    AIR: "elements/air.png",
-    MOON: "elements/moon.png",
-    FIRE: "elements/fire.png",
-    SUN: "elements/sun.png",
-    EARTH: "elements/earth.png",
-    PLANT: "elements/plant.png",
-    ANIMAL: "elements/animal.png",
+    AIR: "icons/air.png",
+    MOON: "icons/moon.png",
+    FIRE: "icons/fire.png",
+    SUN: "icons/sun.png",
+    EARTH: "icons/earth.png",
+    PLANT: "icons/plant.png",
+    ANIMAL: "icons/animal.png",
+    WATER: "icons/water.png",
   
     // Ranges
     "RANGE 0": {src: "icons/range_0.png", className: "inline-block w-auto h-5 mx-1"},
@@ -46,6 +47,7 @@ export function renderIcons(text) {
     STRIFE: "icons/strife.png",
     FEAR: "icons/fear.png",
     JUNGLE: "icons/jungle.png",
+    "MINOR SYMBOL": "icons/Minorsymbol.png",
   
     // Special terms
     FAST: "icons/fast.png",
@@ -56,10 +58,14 @@ export function renderIcons(text) {
     "SACRED SITE": {src: "icons/sacred-site.png", className: "inline-block w-auto h-6 mx-0.5"},
     PLAYER: "icons/player-spirit.png",
     "POWER CARD": "icons/PowerCard.svg",
+    UNEMPOWERED: "icons/Unempowered.svg",
+    EMPOWERED: "icons/Empowered.svg",
     "LAND WITHOUT BLIGHT": {
       src: "icons/NoBlight.svg",
       className: "inline-block w-auto h-8 mx-1",
     },
+    "PLUS 1 ENERGY": { src: "icons/plus_1_energy.png", className: "inline-block w-auto h-8 mx-1"},
+    "ELEMENT": "icons/element.png",
   
     // Spirit-specific
     "BREATH OF DARKNESS": "icons/BreathOfDarkness.svg",
@@ -69,6 +75,7 @@ export function renderIcons(text) {
     QUAKE: "icons/Quake.svg",
     "TOWERING ROOTS OF THE JUNGLE": "icons/ToweringRoots.svg",
     "WANDERING VOICE KEENS DELIRIUM": "icons/WanderingVoice.svg",
+    "VITALITY": "icons/Vitality.svg",
   });
   
   const keywords = Object.keys(iconMap);

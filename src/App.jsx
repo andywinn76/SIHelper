@@ -29,6 +29,8 @@ import Powers from "./assets/components/Powers";
 import EnergyTracker from "./assets/components/EnergyTracker";
 import SpiritSelector from "./assets/components/SpiritSelector";
 import Glossary from "./assets/components/Glossary";
+import SpecialRulesSection from "./assets/components/SpecialRulesSection";
+import SetupSection from "./assets/components/SetupSection";
 
 function SortableItem({ id, children }) {
   const { attributes, listeners, setNodeRef, transform, transition } =
@@ -57,7 +59,9 @@ function App() {
     "innates",
     "elements",
     "energy",
-    "glossary",
+    "glossary",    
+    "setup",
+    "specialRules",
   ]);
 
   const sensors = useSensors(
@@ -81,30 +85,35 @@ function App() {
     }
   };
 
-  // Load saved order from localStorage (on mount)
-  const STORAGE_VERSION = 1; // <--- Start with version 1
-
+  const DEFAULT_ORDER = [
+    "instructions",
+    "innates",
+    "elements",
+    "energy",
+    "glossary",
+    "setup",
+    "specialRules"
+  ];
+  
+  const STORAGE_KEY = "sectionOrder";
+  const STORAGE_HASH = DEFAULT_ORDER.join("-");
+  
   useEffect(() => {
-    const savedVersion = localStorage.getItem("storageVersion");
-    const savedOrder = localStorage.getItem("sectionOrder");
-
-    if (parseInt(savedVersion) !== STORAGE_VERSION) {
-      // Version mismatch or missing version -> Reset
-      console.log("Storage version mismatch. Clearing localStorage...");
-      localStorage.clear();
-      localStorage.setItem("storageVersion", STORAGE_VERSION);
-      setSectionOrder([
-        "instructions",
-        "innates",
-        "elements",
-        "energy",
-        "glossary",
-      ]);
-    } else if (savedOrder) {
+    const savedHash = localStorage.getItem("sectionOrderHash");
+    const savedOrder = localStorage.getItem(STORAGE_KEY);
+  
+    if (savedHash !== STORAGE_HASH || !savedOrder) {
+      console.log("Resetting section order due to layout change");
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(DEFAULT_ORDER));
+      localStorage.setItem("sectionOrderHash", STORAGE_HASH);
+      setSectionOrder(DEFAULT_ORDER);
+    } else {
       try {
         setSectionOrder(JSON.parse(savedOrder));
       } catch (e) {
-        console.warn("Could not parse sectionOrder from localStorage", e);
+        console.warn("Could not parse saved sectionOrder. Resetting.", e);
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(DEFAULT_ORDER));
+        setSectionOrder(DEFAULT_ORDER);
       }
     }
   }, []);
@@ -128,7 +137,7 @@ function App() {
         title="Innates"
         dragListeners={dragListeners}
       >
-        <SpiritSelector />
+        
         <Powers />
       </CollapsibleSection>
     ),
@@ -165,6 +174,26 @@ function App() {
         <Glossary />
       </CollapsibleSection>
     ),
+    setup: (dragListeners) => (
+      <CollapsibleSection
+        key="setup"
+        title="Setup"
+        collapsed={true}
+        dragListeners={dragListeners}
+      >
+        <SetupSection />
+      </CollapsibleSection>
+    ),
+    specialRules: (dragListeners) => (
+      <CollapsibleSection
+        key="specialRules"
+        title="Special Rules"
+        collapsed={true}
+        dragListeners={dragListeners}
+      >
+        <SpecialRulesSection />
+      </CollapsibleSection>
+    ),
   };
 
   return (
@@ -173,7 +202,7 @@ function App() {
         <Wrapper>
           <GlassBG>
             <Logo />
-
+            <SpiritSelector />
             <DndContext
               sensors={sensors}
               collisionDetection={closestCenter}
